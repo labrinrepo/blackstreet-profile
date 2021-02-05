@@ -311,7 +311,8 @@
 
                     </div>
                 </div>
-                <div class="row tab-pane fade order-history" id="v-pills-order" role="tabpanel" aria-labelledby="v-pills-order-tab">
+                <div class="row tab-pane fade order-history" id="v-pills-order" role="tabpanel"
+                    aria-labelledby="v-pills-order-tab">
                     <div class="col-12 p-0">
                         <div class="row">
                             <div class="col-12 p-0">
@@ -328,8 +329,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row tab-pane fade order-history" id="v-pills-address" role="tabpanel" aria-labelledby="v-pills-address-tab">
-                    <div class="col-12 p-0">
+                <div class="row tab-pane fade order-history" id="v-pills-address" role="tabpanel"
+                    aria-labelledby="v-pills-address-tab">
+                    <div class="col-12 p-0 address hide">
                         <div class="row">
                             <div class="col-12 p-0">
                                 <h4>address book</h4>
@@ -345,7 +347,305 @@
                         </div>
                         <div class="row">
                             <div class="col-12 p-0">
-                                <button class="btn btn-profile">Add a new address</button>
+                                <button class="btn btn-profile btn-add-address">Add a new address</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-0 new-address">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>new address</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 p-0 divider"></div>
+                        </div>
+                        <form>
+                            <fieldset>
+                                <div class="container">
+                                    <div class="row form-group">
+                                        <div class="col-3 p-0 text-right px-2">
+                                            <label>Title</label>
+                                        </div>
+                                        <div class="col-9 p-0">
+                                            <div class="d-flex flex-column align-items-start">
+                                                <input class="form-control w-100" type="number"
+                                                    aria-describedby="helpId" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-3 p-0 text-right px-2">
+                                            <label>First name <span>*</span></label>
+                                        </div>
+                                        <div class="col-9 p-0">
+                                            <div class="d-flex flex-column align-items-start">
+                                                <input class="form-control w-100" type="number"
+                                                    aria-describedby="helpId" required>
+                                                <small id="helpId" class="form-text pl-2 text-danger"><i
+                                                        class="fas fa-exclamation-circle text-danger"></i> Warning
+                                                    text</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-3 p-0 text-right px-2">
+                                            <label>Last name <span>*</span></label>
+                                        </div>
+                                        <div class="col-9 p-0">
+                                            <div class="d-flex flex-column align-items-start">
+                                                <input class="form-control w-100" type="number"
+                                                    aria-describedby="helpId" required>
+                                                <small id="helpId" class="form-text pl-2 text-danger"><i
+                                                        class="fas fa-exclamation-circle text-danger"></i> Warning
+                                                    text</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-3 p-0 text-right px-2">
+                                            <label>First line of address <span>*</span></label>
+                                        </div>
+                                        <div class="col-9 p-0">
+                                            <div class="d-flex flex-column align-items-start">
+                                                <input class="form-control w-100" type="number"
+                                                    aria-describedby="helpId" required>
+                                                <small id="helpId" class="form-text pl-2 text-danger"><i
+                                                        class="fas fa-exclamation-circle text-danger"></i> Warning
+                                                    text</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-3 p-0 text-right px-2">
+                                            <label>Second line of address <span>*</span></label>
+                                        </div>
+                                        <div class="col-9 p-0">
+                                            <div class="d-flex flex-column align-items-start">
+                                                <input class="form-control w-100" type="number"
+                                                    aria-describedby="helpId" required>
+                                                <small id="helpId" class="form-text pl-2 text-danger"><i
+                                                        class="fas fa-exclamation-circle text-danger"></i> Warning
+                                                    text</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-3 p-0 text-right px-2">
+                                            <label>Third line of address <span>*</span></label>
+                                        </div>
+                                        <div class="col-9 p-0">
+                                            <div class="d-flex flex-column align-items-start">
+                                                <input class="form-control w-100" type="number"
+                                                    aria-describedby="helpId" required>
+                                                <small id="helpId" class="form-text pl-2 text-danger"><i
+                                                        class="fas fa-exclamation-circle text-danger"></i> Warning
+                                                    text</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-3 p-0 text-right px-2">
+                                            <label>City <span>*</span></label>
+                                        </div>
+                                        <div class="col-9 p-0">
+                                            <div class="d-flex flex-column align-items-start">
+                                                <input class="form-control w-100" type="number"
+                                                    aria-describedby="helpId" required>
+                                                <small id="helpId" class="form-text pl-2 text-danger"><i
+                                                        class="fas fa-exclamation-circle text-danger"></i> Warning
+                                                    text</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-3 p-0 text-right px-2">
+                                            <label>State/Country <span>*</span></label>
+                                        </div>
+                                        <div class="col-9 p-0">
+                                            <div class="d-flex flex-column align-items-start">
+                                                <input class="form-control w-100" type="number"
+                                                    aria-describedby="helpId" required>
+                                                <small id="helpId" class="form-text pl-2 text-danger"><i
+                                                        class="fas fa-exclamation-circle text-danger"></i> Warning
+                                                    text</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-3 p-0 text-right px-2">
+                                            <label>ZIP code <span>*</span></label>
+                                        </div>
+                                        <div class="col-9 p-0">
+                                            <div class="d-flex flex-column align-items-start">
+                                                <input class="form-control w-100" type="number"
+                                                    aria-describedby="helpId" required>
+                                                <small id="helpId" class="form-text text-danger pl-2"><i
+                                                        class="fas fa-exclamation-circle text-danger"></i> The poctcode
+                                                    ‘100’ is not available for your country.</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-3 text-right px-2">
+                                            <label>Instruction</label>
+                                        </div>
+                                        <div class="col-9 p-0">
+                                            <div class="d-flex flex-column align-items-start">
+                                                <textarea class="form-control w-100" name="" id="" rows="3"></textarea>
+                                                <ul class="list-group">
+                                                    <li class="list-group-item list-unstyled">Tell us enything we should
+                                                        know when delivering your order.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3"></div>
+                                        <div class="col-9 p-0">
+                                            <div class="d-flex">
+                                                <div class="btn save-btn mr-3" id="saveNewAddress">Save</div>
+                                                <div class="btn cancel-btn">Cancel</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="col-12 p-0 add-new-address hide">
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <h4>add a new address</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 divider p-0"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <div class="alert d-flex flex-row">
+                                    <i class="fas fa-check-circle mr-2"></i>
+                                    <p>Address ‘Mr Shaig Muradov, Ataturk 65, Second line, 3rd line, Baku, AZ 1000,
+                                        Azerbaijan’ created</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row address-table m-0">
+                            <div class="col-12 p-0">
+                                <div class="row">
+                                    <div class="col-4 address-table-cell p4-2 px-5">
+                                        <span>Address</span>
+                                    </div>
+                                    <div class="col-8 address-table-cell p-0"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4 address-table-cell p-0">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Ataturk 65</li>
+                                            <li class="list-group-item">Second line</li>
+                                            <li class="list-group-item">3rd line</li>
+                                            <li class="list-group-item">Baku</li>
+                                            <li class="list-group-item">Baku</li>
+                                            <li class="list-group-item">AZ 1000</li>
+                                            <li class="list-group-item">Azerbaijan</li>
+                                        </ul>
+                                    </div>
+                                    <form class="col-8 p-0">
+                                        <div class="form-group address-table-cell m-0">
+                                            <select class="form-control form-select select-edit" name="" id="">
+                                                <option>Edit</option>
+                                                <option>Delete</option>
+                                                <option>Set as default shipping address</option>
+                                                <option>Sat as default billing address</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <div class="row">
+                                        <div class="col-12 pt-3 pr-4">
+                                            <button class="btn btn-add-address">Add a new address</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-0 my-addresses hide">
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <h4>my addresses</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 p-0 divider"></div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-12 p-0 added-address-table m-0">
+                                <div class="row">
+                                    <div class="col-md-8 added-address-cell">
+                                        <span>Adress</span>
+                                    </div>
+                                    <div class="col-md-4 added-address-cell">
+                                        <span class="close-table">+</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 added-address-cell">
+                                        <div class="d-flex flex-row align-items-center">
+                                            <button class="btn btn-address mr-2">default shipping address</button>
+                                            <button class="btn btn-address">default billing address</button>
+                                        </div>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Ataturk 65</li>
+                                            <li class="list-group-item">Second line</li>
+                                            <li class="list-group-item">3rd line</li>
+                                            <li class="list-group-item">Baku</li>
+                                            <li class="list-group-item">Baku</li>
+                                            <li class="list-group-item">AZ 1000</li>
+                                            <li class="list-group-item">Azerbaijan</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 added-address-cell">
+                                        <form class="col-8 p-0">
+                                            <div class="form-group address-table-cell m-0">
+                                                <select class="form-control form-select select-edit" name="" id="">
+                                                    <option>Edit</option>
+                                                    <option>Delete</option>
+                                                    <option>Set as default shipping address</option>
+                                                    <option>Sat as default billing address</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-0 delete-address hide">
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <h4>delete address?</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 p-0 divider"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <p>Are you sure you want to delete this address?</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <p>Dr. Burla Murad, Baku, Az1000, Azerbaijan</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <div class="d-flex">
+                                    <div class="btn delete-btn mr-3" id="saveNewAddress">Delete</div>
+                                    <div class="btn cancel-btn">Cancel</div>
+                                </div>
                             </div>
                         </div>
                     </div>

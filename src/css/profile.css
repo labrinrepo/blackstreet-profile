@@ -33,6 +33,40 @@ h4 {
   text-transform: uppercase;
 }
 
+textarea {
+  resize: none;
+}
+
+textarea:focus {
+  box-shadow: none !important;
+}
+
+input {
+  border-radius: 0 !important;
+}
+
+input:focus {
+  box-shadow: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.new-address .list-group .list-group-item {
+  background: none;
+  border: 0;
+  font-size: small;
+  color: #949495;
+  list-style: circle !important;
+}
+
 .profile--section {
   padding: 136px 83px;
 }
@@ -61,7 +95,13 @@ h4 {
 
 .profile-info.hide,
 .change-pass.hide,
-.delete-profile.hide {
+.delete-profile.hide,
+.address.hide,
+.order-history.hide,
+.new-address.hide,
+.add-new-address.hide,
+.my-addresses.hide,
+.delete-address.hide {
   display: none;
 }
 
@@ -136,13 +176,15 @@ h4 {
 }
 .change-pass form fieldset,
 .edit-profile form fieldset,
-.delete-profile form fieldset {
+.delete-profile form fieldset,
+.new-address form fieldset {
   margin: 0;
 }
 
 .change-pass form fieldset label,
 .edit-profile form fieldset label,
-.delete-profile form fieldset label {
+.delete-profile form fieldset label,
+.new-address form fieldset label {
   font-weight: 600;
   font-size: 14px;
   font-style: normal;
@@ -151,13 +193,15 @@ h4 {
 
 .change-pass form fieldset label span,
 .edit-profile form fieldset label span,
-.delete-profile form fieldset label span {
+.delete-profile form fieldset label span,
+.new-address form fieldset label span {
   color: red;
 }
 
 .change-pass form fieldset input,
 .edit-profile form fieldset input,
-.delete-profile form fieldset input {
+.delete-profile form fieldset input,
+.new-address form fieldset input {
   background: #fff;
   border: 1px solid #c4c4c4;
   border-radius: 0;
@@ -287,3 +331,250 @@ h4 {
 }
 
 /* *********************************************** Order History  ************************************** */
+
+.new-address form fieldset .form-group .form-control {
+  width: 561px;
+}
+
+/* *********************************************** Add new address  ************************************** */
+
+.add-new-address .alert {
+  background: #edf0f6;
+  height: 57px;
+}
+
+.add-new-address .alert i,
+.add-new-address .alert p {
+  color: #0343a2;
+  font-size: 14px;
+  line-height: 17.07px;
+  font-weight: 500;
+}
+
+.add-new-address .address-table {
+  height: 376px;
+}
+
+.add-new-address .address-table .address-table-cell {
+  border: 1px solid #c4c4c4;
+}
+
+.add-new-address .address-table .row:first-child .address-table-cell {
+  padding: 22px;
+}
+
+.add-new-address .address-table .list-group {
+  padding: 36px 0 88px 22px;
+}
+
+.add-new-address .address-table .list-group .list-group-item {
+  background: none;
+  border: 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  line-height: 19.5px;
+  list-style: circle !important;
+}
+
+.add-new-address .address-table .row:last-child .address-table-cell:last-child {
+  padding: 23px 0 119px 55px;
+  height: 100%;
+}
+
+.add-new-address
+  .address-table
+  .row:last-child
+  .address-table-cell
+  .select-edit {
+  min-width: 97px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid #c4c4c4;
+  color: #000;
+  background: url("../../assets/icon/down-arrow.svg"), transparent;
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 19.5px;
+  font-weight: 500;
+}
+
+.add-new-address
+  .address-table
+  .row:last-child
+  .address-table-cell
+  .select-edit:focus {
+  box-shadow: none;
+}
+
+.add-new-address
+  .address-table
+  .row:last-child
+  .address-table-cell
+  .select-edit
+  option {
+  border: 1px solid #c4c4c4;
+  box-shadow: none;
+  background: transparent;
+}
+
+/* *********************************************** Added address  ************************************** */
+
+.added-address-table .added-address-cell {
+  border: 1px solid #c4c4c4;
+  padding: 22px 0 0 23px;
+}
+
+.added-address-table .row:first-child .added-address-cell {
+  height: 60px;
+  padding: 22px;
+}
+
+.added-address-table .row:last-child .added-address-cell {
+  height: 380px;
+  padding: 22px;
+}
+
+.added-address-table .row:first-child .added-address-cell:last-child {
+  position: relative;
+}
+
+.my-addresses .added-address-table .added-address-cell .close-table {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  transform: rotate(45deg);
+  color: #949495;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 8px 10px;
+}
+
+.added-address-table .added-address-cell .btn-address {
+  position: relative;
+  background: #2f2f30;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.07px;
+  letter-spacing: 0em;
+  padding: 8px 16px;
+  color: #f6f6f7;
+  width: auto;
+}
+
+.added-address-table .added-address-cell .btn-address:after {
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0px;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  z-index: -1;
+}
+
+.added-address-table .added-address-cell .btn-address:hover {
+  outline: none;
+  color: #2f2f30;
+}
+
+.added-address-table .added-address-cell .btn-address:hover:after {
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #2f2f30;
+}
+
+.added-address-table .list-group .list-group-item {
+  background: none;
+  border: 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  line-height: 19.5px;
+  list-style: circle !important;
+  margin: 0;
+  padding: 10px 0 6px 0;
+}
+
+.my-addresses .added-address-table .added-address-cell .select-edit {
+  min-width: 97px;
+  width: 270px;
+  height: 50px;
+  border: 1px solid #c4c4c4;
+  color: #000;
+  background: url("../../assets/icon/down-arrow.svg"), transparent;
+  background-repeat: no-repeat;
+  background-position: 94% 50%;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 19.5px;
+  font-weight: 500;
+}
+
+.my-addresses .added-address-table .added-address-cell .select-edit:focus {
+  box-shadow: none;
+}
+
+.my-addresses .added-address-table .added-address-cell .select-edit option {
+  border: 1px solid #c4c4c4;
+  box-shadow: none;
+  background: transparent;
+}
+
+/* *********************************************** Added address  ************************************** */
+
+.delete-address .row:nth-child(3).col-12 p {
+  color: #2f2f30;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+}
+
+.delete-address .row:nth-child(4) .col-12 p {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.82px;
+  margin: 28px 0 36px 0;
+}
+
+.delete-address .row:last-child .delete-btn {
+  position: relative;
+  background: #2f2f30;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17.07px;
+  letter-spacing: 0em;
+  padding: 8px 16px;
+  color: #f6f6f7;
+}
+
+.delete-address .row:last-child .delete-btn:after {
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0px;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  z-index: -1;
+}
+
+.delete-address .row:last-child .delete-btn:hover {
+  outline: none;
+  color: #2f2f30;
+}
+
+.delete-address .row:last-child .delete-btn:hover:after {
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #2f2f30;
+}
