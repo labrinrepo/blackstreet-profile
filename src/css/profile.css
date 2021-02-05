@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  appearance: none;
+  color: #2f2f30;
+}
+
+nav .breadcrumb {
+  background-color: #f6f6f7;
+}
+
+nav ol li a {
+  text-decoration: none;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  color: #949495;
+}
+
+nav ol li a:hover {
+  color: #2f2f30;
+}
+
+h4 {
+  line-height: 29.6px;
+  font-style: normal;
+  font-weight: 800;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.profile--section {
+  padding: 136px 83px;
+}
+
+/* *********************************************** Profile Tabs  ************************************** */
+.profile--section .profile--tabs {
+  display: flex;
+  flex-flow: column;
+  margin: 56px 0;
+}
+
+.profile--section .profile--tabs .nav-link {
+  color: #8e9091;
+  font-weight: 700;
+  line-height: 19.5px;
+  font-style: normal;
+  font-size: 16px;
+  padding-bottom: 21px;
+}
+
+.profile--section .profile--tabs .nav-link.active {
+  background: none;
+  color: #323334;
+}
+/* *********************************************** Hide profile-info,edit,delete Sections  ************************************** */
+
+.profile-info.hide,
+.change-pass.hide,
+.delete-profile.hide {
+  display: none;
+}
+
+/* *********************************************** Profile Info  ************************************** */
+
+.divider {
+  border: 1px solid #c4c4c4;
+  margin: 28px 0 36px;
+}
+
+.profile-info .info--table {
+  color: #000;
+  border: 0;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 19.5px;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.profile-info .info--table .table-cell {
+  padding: 22px 26px;
+  border: 1px solid #c4c4c4;
+}
+
+.btn {
+  width: 218px;
+  height: 33px;
+}
+
+.btn-profile {
+  position: relative;
+  background: #2f2f30;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17.07px;
+  letter-spacing: 0em;
+
+  padding: 8px 16px;
+  color: #f6f6f7;
+}
+
+.btn-profile:after {
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0px;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  z-index: -1;
+}
+
+.btn-profile:hover {
+  outline: none;
+  color: #2f2f30;
+}
+
+.btn-profile:hover:after {
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #2f2f30;
+}
+
+/* *********************************************** Change Password  ************************************** */
+
+.form-group {
+  margin: 10px 0 20px 0;
+}
+.change-pass form fieldset,
+.edit-profile form fieldset,
+.delete-profile form fieldset {
+  margin: 0;
+}
+
+.change-pass form fieldset label,
+.edit-profile form fieldset label,
+.delete-profile form fieldset label {
+  font-weight: 600;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 17px;
+}
+
+.change-pass form fieldset label span,
+.edit-profile form fieldset label span,
+.delete-profile form fieldset label span {
+  color: red;
+}
+
+.change-pass form fieldset input,
+.edit-profile form fieldset input,
+.delete-profile form fieldset input {
+  background: #fff;
+  border: 1px solid #c4c4c4;
+  border-radius: 0;
+  height: 50px;
+  width: 100%;
+}
+
+.change-pass form fieldset input:focus,
+.edit-profile form fieldset input:focus,
+.delete-profile form fieldset input:focus {
+  box-shadow: none;
+}
+
+.change-pass .pass-rules ul li {
+  color: #949495;
+  font-size: 10px;
+  line-height: 12.19px;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 6px;
+}
+
+.save-btn {
+  position: relative;
+  background: #2f2f30;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17.07px;
+  letter-spacing: 0em;
+  padding: 8px 16px;
+  color: #f6f6f7;
+}
+
+.save-btn:after {
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0px;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  z-index: -1;
+}
+
+.save-btn:hover {
+  outline: none;
+  color: #2f2f30;
+}
+
+.save-btn:hover:after {
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #2f2f30;
+}
+
+.cancel-btn {
+  position: relative;
+  background: #f6f6f7 !important;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17.07px;
+  letter-spacing: 0em;
+  padding: 8px 16px;
+  color: #2f2f30 !important;
+  border: 1px solid !important;
+}
+
+.cancel-btn:after {
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0px;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  z-index: -1;
+}
+
+.cancel-btn:hover {
+  outline: none;
+  color: #f6f6f7 !important;
+  border: 0 !important;
+}
+
+.cancel-btn:hover:after {
+  background-color: #2f2f30 !important;
+  width: 100%;
+  border: 1px solid #f6f6f7 !important;
+}
+
+/* *********************************************** Edit Profile  ************************************** */
+
+.edit-profile.hide {
+  display: none;
+}
+
+/* *********************************************** Delete Profile  ************************************** */
+
+.delete-profile p {
+  font-style: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+  margin-bottom: 28px;
+}
+
+.delete-profile .alert {
+  background: #edf0f6 !important;
+  padding: 12px 0 12px 12px;
+  border-radius: 0;
+}
+
+.delete-profile .alert p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+}
+
+.delete-profile .alert p:first-child {
+  color: #2f2f30;
+  font-weight: 600;
+}
+
+/* *********************************************** Order History  ************************************** */
