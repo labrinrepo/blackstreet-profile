@@ -141,7 +141,6 @@ input[type="number"] {
   font-weight: 500;
   line-height: 17.07px;
   letter-spacing: 0em;
-
   padding: 8px 16px;
   color: #f6f6f7;
 }
@@ -166,7 +165,6 @@ input[type="number"] {
 .btn-profile:hover:after {
   background-color: #fff;
   width: 100%;
-  border: 1px solid #2f2f30;
 }
 
 /* *********************************************** Change Password  ************************************** */
@@ -247,6 +245,7 @@ input[type="number"] {
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.5s ease 0s;
   z-index: -1;
+  border: 1px solid transparent;
 }
 
 .save-btn:hover {
@@ -284,12 +283,12 @@ input[type="number"] {
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.5s ease 0s;
   z-index: -1;
+  border: 1px solid transparent;
 }
 
 .cancel-btn:hover {
   outline: none;
   color: #f6f6f7 !important;
-  border: 0 !important;
 }
 
 .cancel-btn:hover:after {
@@ -409,17 +408,6 @@ input[type="number"] {
   box-shadow: none;
 }
 
-.add-new-address
-  .address-table
-  .row:last-child
-  .address-table-cell
-  .select-edit
-  option {
-  border: 1px solid #c4c4c4;
-  box-shadow: none;
-  background: transparent;
-}
-
 /* *********************************************** Added address  ************************************** */
 
 .added-address-table .added-address-cell {
@@ -519,12 +507,6 @@ input[type="number"] {
 
 .my-addresses .added-address-table .added-address-cell .select-edit:focus {
   box-shadow: none;
-}
-
-.my-addresses .added-address-table .added-address-cell .select-edit option {
-  border: 1px solid #c4c4c4;
-  box-shadow: none;
-  background: transparent;
 }
 
 /* *********************************************** Added address  ************************************** */
