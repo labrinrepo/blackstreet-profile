@@ -1,5 +1,5 @@
 @font-face {
-    font-family: myFirstFont;
+    font-family: Montserrat;
     src:local("E:/LABRIN TECH PROJECTS/blackstreet new/last varian/src/fonts/Montserrat/Montserrat-Bold.ttf");
 }
 
@@ -77,6 +77,8 @@ section{
     text-align: left;
 }
 
+
+
 .navbar .navbar-nav .nav-link{
     outline: none;
     color:#323334;
@@ -90,19 +92,18 @@ section{
 .nav-1 .navbar-nav .nav-link,
 .nav-1 .navbar-nav .nav-link:hover{
     color: #5C5D5D;
+    font-weight: 500;
 }
 
 
-.nav-1 ul:first-child{
+.nav-1 .nav-list-1{
     padding-top: 20px;
 
 }
 
-.nav-1 ul:first-child li a{
-    color: #323334;
-    font-weight: 500;
+.nav-1 .nav-list-1 li{
+    padding-left: 20px;
 }
-
 
 .nav-1 .nav-list-2 .nav-item{
     position: relative;
@@ -116,7 +117,7 @@ section{
     font-size: 9px;
     width: 16px;
     height: 18px;
-    padding-left: 5px;
+    padding-left: 5.3px;
     color: #fff;
     margin-left: 35px;
     transform: translate(-50%,-100%);
@@ -124,18 +125,17 @@ section{
 }
 
 
-.nav-2 ul{
+.nav-2 ul:not(.shop-by-menu ul){
     padding-top: 20px;
     font-weight: 600;
 }
 
 .nav-1 .nav-list-1 .nav-item:first-child{
-    font-weight: 700;
     background-color: #fff;
     height: 30%;
     width: 30%;
-    padding: 35px 0px 20px 35px;
-    margin-top: -8%;
+    padding: 36px 0px 20px 77px;
+    margin-top: -7%;
     margin-left: -8%;
 }
 
@@ -149,7 +149,7 @@ section{
 }
 .nav-2 .nav-list-3 .nav-item:first-child{
     background-color: #fff;
-    padding: 39px 15px 20px 34px;
+    padding: 38px 15px 20px 34px;
     margin-top: -5%;
     margin-left: -3.7%;
 }
@@ -187,6 +187,11 @@ section{
 .new-collec{
     padding: 0px 20px 20px 40px;
 }
+
+#carouselExampleIndicators{
+    margin-top: -20px;
+}
+
 .carousel-inner{
     width: 98%;
     height: 90%;
@@ -243,7 +248,6 @@ section{
     border: 1px #2F2F30;
     border-radius: 0;
     outline: none;
-    border-color: #2F2F30;
     position: relative; 
     display: block;
     background: #2F2F30;
@@ -268,6 +272,7 @@ section{
 }
 
 .carousel-inner .carousel-item .carousel-text .btn:after { 
+    border: 1px solid #2F2F30;
     content: "";
     height: 100%; 
     left: 0; 
@@ -390,7 +395,9 @@ section{
 
 .women-collec-text a{
     margin-top: 10%;
+    border: 1px solid #2F2F30;
 }
+
 
 
 /************************************************ Women Collection End ***************************/
@@ -679,7 +686,7 @@ section{
     box-sizing: border-box;  
     -moz-box-sizing: border-box;  
     -webkit-box-sizing: border-box;
-    border-color: #2F2F30;
+    border: 1px solid #2F2F30;
     outline: none;
     position: relative;
     margin-top: 5%;
@@ -709,7 +716,7 @@ section{
  
 .shop-collec .shop-collec-text a:hover{
     outline: none;
-    border-color: #2F2F30;
+    border: 1px solid #fff;
     color: #fff;
 }
 
@@ -728,7 +735,7 @@ section{
     box-sizing: border-box;  
     -moz-box-sizing: border-box;  
     -webkit-box-sizing: border-box;
-    border-color: #2F2F30;
+    border: 1px solid #2F2F30;
     outline: none;
     position: relative;
     margin-top: 5%;
@@ -877,14 +884,6 @@ section{
     transition:all 0.15s ease-in-out;
 }
 
-/* .product-action .blur{
-    background-color: rgba(0,0,0,0.7);
-    height: 100px;
-    width: 200px;
-    z-index: 5;
-    position: absolute;
-} */
-
 .product-action-text {
     z-index: 10;
     position: absolute;
@@ -916,10 +915,7 @@ section{
     line-height: 17px;
     letter-spacing: 0em;
 }
-/* 
-.product-action:hover{
-    opacity: 1;
-} */
+
 
 /************************************************* Recently Reviewed Section End ************************/
 
@@ -1036,6 +1032,8 @@ section{
 }
 
 .subscribe-form button p{
+  text-transform: uppercase;
+  color: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;

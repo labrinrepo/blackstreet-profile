@@ -12,12 +12,14 @@
 <link rel="stylesheet" href="./src/css/style.css">
 <link rel="stylesheet" href="./src/css/sign.css">
 <link rel="stylesheet" href="./src/css/details.css">
-<title>blackstreet | Successfully registered</title>
+<link rel="stylesheet" href="./src/css/drop.css">
+<link rel="stylesheet" href="./src/css/profile.css">
+<title>blackstreet | Forgotten Password</title>
 </head>
 <body>
-<!---------------------------------------- Header Start ------------------------------------->
-
-<!---------------------------------------- Navbar 1 Start ----------------------------------->
+<!---------------------------------------- Header Start ------------------------------------>
+<header>
+<!---------------------------------------- Navbar  Start ----------------------------------->
 <nav class="navbar navbar-expand-sm nav-1 px-4 py-0 navbar-light">
     <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target1, #collapse_target2">
         <span class="navbar-toggler-icon"></span>
@@ -59,26 +61,665 @@
 <nav class="navbar navbar-expand-sm nav-2 px-4 py-0 navbar-light">
     <div class="collapse navbar-collapse" id="collapse_target2">
         <ul class="navbar-nav mr-auto nav-list-3">
-            <li class="nav-item">
-                <a class="nav-link" href="#">new in</a>
+            <li class="nav-item dropdown menu-area" id="dropdown">
+                <a class="nav-link ml-2" href="#" id="mega-one"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  new in
+                </a>
+                <div class="dropdown-menu mega-area pt-0" aria-labelledby="mega-one">
+                    <div class="row w-100 h-100">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="row">
+                                <div class="col-lg-4 pr-0">
+                                    <h4 class="show-tab">new in</h4>
+                                </div>
+                                <div class="col-lg-7 shop-by-menu">
+                                    <div class="row">
+                                        <div class="col-lg-6 shop-by-1 pl-5">
+                                            <h4 class="trend-title" id="show">shop by trend</h4>
+                                            <ul class="trend-list">
+                                                <li class="dropdown-item"><p>Blazer Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sweater Dresses</p></li>
+                                                <li class="dropdown-item"><p>Shirt Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sweatshirt Dresses</p></li>
+                                                <li class="dropdown-item"><p>Bodycon Dresses</p></li>
+                                                <li class="dropdown-item"><p>Plaid Dresses</p></li>
+                                                <li class="dropdown-item"><p>Floral Dresses</p></li>
+                                                <li class="dropdown-item"><p>Puff Sleeve Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sheer Dresses</p></li>
+                                                <li class="dropdown-item"><p>Velvet Dresses</p></li>
+                                                <li class="dropdown-item"><p>Animal Print Dresses</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 shop-by-2" id="show">
+                                            <h4 class="by-length-title">shop by length</h4>
+                                            <ul class="by-length">
+                                                <li class="dropdown-item"><p>Maxi Dresses</p></li>
+                                                <li class="dropdown-item"><p>Midi Dresses</p></li>
+                                                <li class="dropdown-item"><p>Short Dresses</p></li>
+                                            </ul>
+                                            <h4 class="by-color-title" id="show">shop by color</h4>
+                                            <ul class="by-color">
+                                                <li class="dropdown-item"><p>Black Dresses</p></li>
+                                                <li class="dropdown-item"><p>White Dresses</p></li>
+                                                <li class="dropdown-item"><p>Pastel Dresses</p></li>
+                                                <li class="dropdown-item"><p>Burgundy Dresses</p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="drop-col-divider"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6"> <!-----Images---->
+                            <div class="hide" id="hide">
+                                <div class="row px-5 pt-4">
+                                    <h4 class="show-dropdown">Shop by length</h4>
+                                </div>
+                                <div class="row px-3 py-2">
+                                    <div class="col-lg-3">
+                                        <ul class="dropdown-img-list">
+                                            <li>
+                                                <img src="./assets/img/dropdown/Ellipse 13.png" alt="" class="dropdown-img">
+                                                <p class="dropdown-img-context my-2">sexy</p>
+                                            </li>
+                                            <li>
+                                                <img src="./assets/img/dropdown/Ellipse 14.png" alt="" class="dropdown-img">
+                                                <p class="dropdown-img-context my-2">casual</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <ul class="dropdown-img-list">
+                                            <li>
+                                                <img src="./assets/img/dropdown/Ellipse 15.png" alt="" class="dropdown-img">
+                                                <p class="dropdown-img-context my-2">elegant</p>
+                                            </li>
+                                            <li>
+                                                <img src="./assets/img/dropdown/Ellipse 16.png" alt="" class="dropdown-img">
+                                                <p class="dropdown-img-context my-2">party</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <ul>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <ul>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">dresses</a>
+            <li class="nav-item dropdown menu-area">
+                <a class="nav-link ml-2" href="#" id="mega-one"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  dresses
+                </a>
+                <div class="dropdown-menu mega-area pt-0" aria-labelledby="mega-one">
+                    <div class="row w-100 h-100">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="row">
+                                <div class="col-lg-4 pr-0">
+                                    <h4 class="show-tab">dresses</h4>
+                                </div>
+                                <div class="col-lg-7 shop-by-menu">
+                                    <div class="row">
+                                        <div class="col-lg-6 shop-by-1 pl-5">
+                                            <h4 class="trend-title">shop by trend</h4>
+                                            <ul class="trend-list">
+                                                <li class="dropdown-item"><p>Blazer Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sweater Dresses</p></li>
+                                                <li class="dropdown-item"><p>Shirt Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sweatshirt Dresses</p></li>
+                                                <li class="dropdown-item"><p>Bodycon Dresses</p></li>
+                                                <li class="dropdown-item"><p>Plaid Dresses</p></li>
+                                                <li class="dropdown-item"><p>Floral Dresses</p></li>
+                                                <li class="dropdown-item"><p>Puff Sleeve Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sheer Dresses</p></li>
+                                                <li class="dropdown-item"><p>Velvet Dresses</p></li>
+                                                <li class="dropdown-item"><p>Animal Print Dresses</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 shop-by-2">
+                                            <h4 class="by-length-title">shop by length</h4>
+                                            <ul class="by-length">
+                                                <li class="dropdown-item"><p>Maxi Dresses</p></li>
+                                                <li class="dropdown-item"><p>Midi Dresses</p></li>
+                                                <li class="dropdown-item"><p>Short Dresses</p></li>
+                                            </ul>
+                                            <h4 class="by-color-title">shop by color</h4>
+                                            <ul class="by-color">
+                                                <li class="dropdown-item"><p>Black Dresses</p></li>
+                                                <li class="dropdown-item"><p>White Dresses</p></li>
+                                                <li class="dropdown-item"><p>Pastel Dresses</p></li>
+                                                <li class="dropdown-item"><p>Burgundy Dresses</p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="drop-col-divider"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6"> <!-----Images---->
+                            <div class="row px-5 pt-4">
+                                <h4 class="show-dropdown">Shop by length</h4>
+                            </div>
+                            <div class="row px-3 py-2">
+                                <div class="col-lg-3">
+                                    <ul class="dropdown-img-list">
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 13.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">sexy</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 14.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">casual</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul class="dropdown-img-list">
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 15.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">elegant</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 16.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">party</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">clothing</a>
+            <li class="nav-item dropdown menu-area">
+                <a class="nav-link" href="#" id="mega-one"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  clothing
+                </a>
+                <div class="dropdown-menu mega-area pt-0" aria-labelledby="mega-one">
+                    <div class="row w-100 h-100">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="row">
+                                <div class="col-lg-4 pr-0">
+                                    <h4 class="show-tab">clothing</h4>
+                                </div>
+                                <div class="col-lg-7 shop-by-menu">
+                                    <div class="row">
+                                        <div class="col-lg-6 shop-by-1 pl-5">
+                                            <h4 class="trend-title">shop by trend</h4>
+                                            <ul class="trend-list">
+                                                <li class="dropdown-item"><p>Blazer Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sweater Dresses</p></li>
+                                                <li class="dropdown-item"><p>Shirt Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sweatshirt Dresses</p></li>
+                                                <li class="dropdown-item"><p>Bodycon Dresses</p></li>
+                                                <li class="dropdown-item"><p>Plaid Dresses</p></li>
+                                                <li class="dropdown-item"><p>Floral Dresses</p></li>
+                                                <li class="dropdown-item"><p>Puff Sleeve Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sheer Dresses</p></li>
+                                                <li class="dropdown-item"><p>Velvet Dresses</p></li>
+                                                <li class="dropdown-item"><p>Animal Print Dresses</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 shop-by-2">
+                                            <h4 class="by-length-title">shop by length</h4>
+                                            <ul class="by-length">
+                                                <li class="dropdown-item"><p>Maxi Dresses</p></li>
+                                                <li class="dropdown-item"><p>Midi Dresses</p></li>
+                                                <li class="dropdown-item"><p>Short Dresses</p></li>
+                                            </ul>
+                                            <h4 class="by-color-title">shop by color</h4>
+                                            <ul class="by-color">
+                                                <li class="dropdown-item"><p>Black Dresses</p></li>
+                                                <li class="dropdown-item"><p>White Dresses</p></li>
+                                                <li class="dropdown-item"><p>Pastel Dresses</p></li>
+                                                <li class="dropdown-item"><p>Burgundy Dresses</p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="drop-col-divider"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6"> <!-----Images---->
+                            <div class="row px-5 pt-4">
+                                <h4 class="show-dropdown">Shop by length</h4>
+                            </div>
+                            <div class="row px-3 py-2">
+                                <div class="col-lg-3">
+                                    <ul class="dropdown-img-list">
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 13.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">sexy</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 14.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">casual</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul class="dropdown-img-list">
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 15.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">elegant</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 16.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">party</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">tops</a>
+            <li class="nav-item dropdown menu-area">
+                <a class="nav-link" href="#" id="mega-one"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  tops
+                </a>
+                <div class="dropdown-menu mega-area pt-0" aria-labelledby="mega-one">
+                    <div class="row w-100 h-100">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="row">
+                                <div class="col-lg-4 pr-0">
+                                    <h4 class="show-tab">tops</h4>
+                                </div>
+                                <div class="col-lg-7 shop-by-menu">
+                                    <div class="row">
+                                        <div class="col-lg-6 shop-by-1 pl-5">
+                                            <h4 class="trend-title">shop by trend</h4>
+                                            <ul class="trend-list">
+                                                <li class="dropdown-item"><p>Blazer Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sweater Dresses</p></li>
+                                                <li class="dropdown-item"><p>Shirt Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sweatshirt Dresses</p></li>
+                                                <li class="dropdown-item"><p>Bodycon Dresses</p></li>
+                                                <li class="dropdown-item"><p>Plaid Dresses</p></li>
+                                                <li class="dropdown-item"><p>Floral Dresses</p></li>
+                                                <li class="dropdown-item"><p>Puff Sleeve Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sheer Dresses</p></li>
+                                                <li class="dropdown-item"><p>Velvet Dresses</p></li>
+                                                <li class="dropdown-item"><p>Animal Print Dresses</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 shop-by-2">
+                                            <h4 class="by-length-title">shop by length</h4>
+                                            <ul class="by-length">
+                                                <li class="dropdown-item"><p>Maxi Dresses</p></li>
+                                                <li class="dropdown-item"><p>Midi Dresses</p></li>
+                                                <li class="dropdown-item"><p>Short Dresses</p></li>
+                                            </ul>
+                                            <h4 class="by-color-title">shop by color</h4>
+                                            <ul class="by-color">
+                                                <li class="dropdown-item"><p>Black Dresses</p></li>
+                                                <li class="dropdown-item"><p>White Dresses</p></li>
+                                                <li class="dropdown-item"><p>Pastel Dresses</p></li>
+                                                <li class="dropdown-item"><p>Burgundy Dresses</p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="drop-col-divider"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6"> <!-----Images---->
+                            <div class="row px-5 pt-4">
+                                <h4 class="show-dropdown">Shop by length</h4>
+                            </div>
+                            <div class="row px-3 py-2">
+                                <div class="col-lg-3">
+                                    <ul class="dropdown-img-list">
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 13.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">sexy</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 14.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">casual</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul class="dropdown-img-list">
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 15.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">elegant</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 16.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">party</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">shoes & accessories</a>
+            <li class="nav-item dropdown menu-area">
+                <a class="nav-link" href="#" id="mega-one"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  shoes&accessories
+                </a>
+                <div class="dropdown-menu mega-area pt-0" aria-labelledby="mega-one">
+                    <div class="row w-100 h-100">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="row">
+                                <div class="col-lg-4 pr-0">
+                                    <h4 class="show-tab">shoes&accessories</h4>
+                                </div>
+                                <div class="col-lg-7 shop-by-menu">
+                                    <div class="row">
+                                        <div class="col-lg-6 shop-by-1 pl-5">
+                                            <h4 class="trend-title">shop by trend</h4>
+                                            <ul class="trend-list">
+                                                <li class="dropdown-item"><p>Blazer Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sweater Dresses</p></li>
+                                                <li class="dropdown-item"><p>Shirt Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sweatshirt Dresses</p></li>
+                                                <li class="dropdown-item"><p>Bodycon Dresses</p></li>
+                                                <li class="dropdown-item"><p>Plaid Dresses</p></li>
+                                                <li class="dropdown-item"><p>Floral Dresses</p></li>
+                                                <li class="dropdown-item"><p>Puff Sleeve Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sheer Dresses</p></li>
+                                                <li class="dropdown-item"><p>Velvet Dresses</p></li>
+                                                <li class="dropdown-item"><p>Animal Print Dresses</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 shop-by-2">
+                                            <h4 class="by-length-title">shop by length</h4>
+                                            <ul class="by-length">
+                                                <li class="dropdown-item"><p>Maxi Dresses</p></li>
+                                                <li class="dropdown-item"><p>Midi Dresses</p></li>
+                                                <li class="dropdown-item"><p>Short Dresses</p></li>
+                                            </ul>
+                                            <h4 class="by-color-title">shop by color</h4>
+                                            <ul class="by-color">
+                                                <li class="dropdown-item"><p>Black Dresses</p></li>
+                                                <li class="dropdown-item"><p>White Dresses</p></li>
+                                                <li class="dropdown-item"><p>Pastel Dresses</p></li>
+                                                <li class="dropdown-item"><p>Burgundy Dresses</p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="drop-col-divider"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6"> <!-----Images---->
+                            <div class="row px-5 pt-4">
+                                <h4 class="show-dropdown">Shop by length</h4>
+                            </div>
+                            <div class="row px-3 py-2">
+                                <div class="col-lg-3">
+                                    <ul class="dropdown-img-list">
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 13.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">sexy</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 14.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">casual</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul class="dropdown-img-list">
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 15.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">elegant</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 16.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">party</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">swimwear</a>
+            <li class="nav-item dropdown menu-area">
+                <a class="nav-link" href="#" id="mega-one"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  swimwear
+                </a>
+                <div class="dropdown-menu mega-area pt-0" aria-labelledby="mega-one">
+                    <div class="row w-100 h-100">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="row">
+                                <div class="col-lg-4 pr-0">
+                                    <h4 class="show-tab">swimwear</h4>
+                                </div>
+                                <div class="col-lg-7 shop-by-menu">
+                                    <div class="row">
+                                        <div class="col-lg-6 shop-by-1 pl-5">
+                                            <h4 class="trend-title">shop by trend</h4>
+                                            <ul class="trend-list">
+                                                <li class="dropdown-item"><p>Blazer Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sweater Dresses</p></li>
+                                                <li class="dropdown-item"><p>Shirt Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sweatshirt Dresses</p></li>
+                                                <li class="dropdown-item"><p>Bodycon Dresses</p></li>
+                                                <li class="dropdown-item"><p>Plaid Dresses</p></li>
+                                                <li class="dropdown-item"><p>Floral Dresses</p></li>
+                                                <li class="dropdown-item"><p>Puff Sleeve Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sheer Dresses</p></li>
+                                                <li class="dropdown-item"><p>Velvet Dresses</p></li>
+                                                <li class="dropdown-item"><p>Animal Print Dresses</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 shop-by-2">
+                                            <h4 class="by-length-title">shop by length</h4>
+                                            <ul class="by-length">
+                                                <li class="dropdown-item"><p>Maxi Dresses</p></li>
+                                                <li class="dropdown-item"><p>Midi Dresses</p></li>
+                                                <li class="dropdown-item"><p>Short Dresses</p></li>
+                                            </ul>
+                                            <h4 class="by-color-title">shop by color</h4>
+                                            <ul class="by-color">
+                                                <li class="dropdown-item"><p>Black Dresses</p></li>
+                                                <li class="dropdown-item"><p>White Dresses</p></li>
+                                                <li class="dropdown-item"><p>Pastel Dresses</p></li>
+                                                <li class="dropdown-item"><p>Burgundy Dresses</p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="drop-col-divider"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6"> <!-----Images---->
+                            <div class="row px-5 pt-4">
+                                <h4 class="show-dropdown">Shop by length</h4>
+                            </div>
+                            <div class="row px-3 py-2">
+                                <div class="col-lg-3">
+                                    <ul class="dropdown-img-list">
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 13.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">sexy</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 14.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">casual</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul class="dropdown-img-list">
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 15.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">elegant</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 16.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">party</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">sale</a>
+            <li class="nav-item dropdown menu-area">
+                <a class="nav-link" href="#" id="mega-one"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  sale
+                </a>
+                <div class="dropdown-menu mega-area pt-0" aria-labelledby="mega-one">
+                    <div class="row w-100 h-100">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="row">
+                                <div class="col-lg-4 pr-0">
+                                    <h4 class="show-tab">sale</h4>
+                                </div>
+                                <div class="col-lg-7 shop-by-menu">
+                                    <div class="row">
+                                        <div class="col-lg-6 shop-by-1 pl-5">
+                                            <h4 class="trend-title">shop by trend</h4>
+                                            <ul class="trend-list">
+                                                <li class="dropdown-item"><p>Blazer Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sweater Dresses</p></li>
+                                                <li class="dropdown-item"><p>Shirt Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sweatshirt Dresses</p></li>
+                                                <li class="dropdown-item"><p>Bodycon Dresses</p></li>
+                                                <li class="dropdown-item"><p>Plaid Dresses</p></li>
+                                                <li class="dropdown-item"><p>Floral Dresses</p></li>
+                                                <li class="dropdown-item"><p>Puff Sleeve Dresses</p></li>
+                                                <li class="dropdown-item"><p>Sheer Dresses</p></li>
+                                                <li class="dropdown-item"><p>Velvet Dresses</p></li>
+                                                <li class="dropdown-item"><p>Animal Print Dresses</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 shop-by-2">
+                                            <h4 class="by-length-title">shop by length</h4>
+                                            <ul class="by-length">
+                                                <li class="dropdown-item"><p>Maxi Dresses</p></li>
+                                                <li class="dropdown-item"><p>Midi Dresses</p></li>
+                                                <li class="dropdown-item"><p>Short Dresses</p></li>
+                                            </ul>
+                                            <h4 class="by-color-title">shop by color</h4>
+                                            <ul class="by-color">
+                                                <li class="dropdown-item"><p>Black Dresses</p></li>
+                                                <li class="dropdown-item"><p>White Dresses</p></li>
+                                                <li class="dropdown-item"><p>Pastel Dresses</p></li>
+                                                <li class="dropdown-item"><p>Burgundy Dresses</p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="drop-col-divider"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6"> <!-----Images---->
+                            <div class="row px-5 pt-4">
+                                <h4 class="show-dropdown">Shop by length</h4>
+                            </div>
+                            <div class="row px-3 py-2">
+                                <div class="col-lg-3">
+                                    <ul class="dropdown-img-list">
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 13.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">sexy</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 14.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">casual</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul class="dropdown-img-list">
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 15.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">elegant</p>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/img/dropdown/Ellipse 16.png" alt="" class="dropdown-img">
+                                            <p class="dropdown-img-context my-2">party</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
         </ul>
         <form class="form-inline">
@@ -88,8 +729,8 @@
     </div>
 </nav>
 <!---------------------------------------- Navbar End ------------------------------------->
+</header>
 <!---------------------------------------- Header End ------------------------------------->
-
 
 <!---------------------------------------- Sections Start --------------------------------->
 <section class="fogotten py-5">
@@ -175,7 +816,7 @@
                         <div class="subscribe-form">
                             <form action="#">
                                 <input type="text" placeholder="Your Email Address">
-                                <button><p>Subscribe</p></button>
+                                <button><p class="subscribe">Subscribe</p></button>
                             </form>
                         </div>
                     </div>
@@ -217,5 +858,8 @@
 
 <script src="./src/js/min/jquery.min.js"></script>
 <script src="./src/js/min/bootstrap.min.js"></script>
+<script src="src/js/min/popper.min.js"></script>
+<script src="src/js/main.js"></script>
+<script src="src/js/script.js"></script>
 </body>
 </html>

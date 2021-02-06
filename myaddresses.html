@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./src/css/sign.css">
     <link rel="stylesheet" href="./src/css/drop.css">
     <link rel="stylesheet" href="./src/css/profile.css">
-    <title>Profile</title>
+    <title>My Addresses</title>
 
 <body>
     <!---------------------------------------- Header Start ------------------------------------>
@@ -1028,7 +1028,8 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item"><a href="#">Account</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><a href="#">Profile</a></li>
+            <li class="breadcrumb-item"><a href="#">Address book</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#">My addresses</a></li>
         </ol>
     </nav>
 
@@ -1041,12 +1042,12 @@
         <div class="row">
             <div class="col-sm-4 profile--tabs nav nav-pills" id="v-pills-tab" role="tablist"
                 aria-orientation="vertical">
-                <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
-                    role="tab" aria-controls="v-pills-profile" aria-selected="true">Profile</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                    aria-controls="v-pills-profile" aria-selected="true">Profile</a>
                 <a class="nav-link" id="v-pills-order-tab" data-toggle="pill" href="#v-pills-order" role="tab"
                     aria-controls="v-pills-order" aria-selected="false">Order History</a>
-                <a class="nav-link" id="v-pills-address-tab" data-toggle="pill" href="#v-pills-address" role="tab"
-                    aria-controls="v-pills-address" aria-selected="false">Address Book</a>
+                <a class="nav-link active" id="v-pills-address-tab" data-toggle="pill" href="#v-pills-address"
+                    role="tab" aria-controls="v-pills-address" aria-selected="false">Address Book</a>
                 <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
                     aria-controls="v-pills-profile" aria-selected="false">Email History</a>
                 <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
@@ -1057,7 +1058,7 @@
                     aria-controls="v-pills-wishlist" aria-selected="false">Wish List</a>
             </div>
             <div class="tab-content col-sm-8" id="v-pills-tabContent">
-                <div class="profile row tab-pane fade show active" id="v-pills-profile" role="tabpanel"
+                <div class="profile row tab-pane fade" id="v-pills-profile" role="tabpanel"
                     aria-labelledby="v-pills-profile-tab">
                     <div class="profile-info col-12">
                         <div class="row">
@@ -1134,26 +1135,56 @@
                         </div>
                     </div>
                 </div>
-                <div class="row tab-pane fade" id="v-pills-address" role="tabpanel"
+                <div class="row tab-pane fade show active" id="v-pills-address" role="tabpanel"
                     aria-labelledby="v-pills-address-tab">
-                    <div class="col-12 p-0 address">
+                    <div class="col-12 p-0 my-addresses">
                         <div class="row">
                             <div class="col-12 p-0">
-                                <h4 class="address-book-title">address book</h4>
+                                <h4 class="my-address-title">my addresses</h4>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 divider p-0"></div>
+                            <div class="col-12 p-0 divider"></div>
                         </div>
-                        <div class="row">
-                            <div class="col-12 p-0 my-4">
-                                <p>There are no addresses in your address book.</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 p-0">
-                                <a href="addnewaddress.html" class="btn btn-profile btn-add-address d-inline-block">Add
-                                    a new address</a>
+                        <div class="row m-0">
+                            <div class="col-12 p-0 my-addresses-table m-0">
+                                <div class="row">
+                                    <div class="col-md-8 my-addresses-cell">
+                                        <span>Adress</span>
+                                    </div>
+                                    <div class="col-md-4 my-addresses-cell">
+                                        <a href="deleteaddress.html" class="close-table">+</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 my-addresses-cell">
+                                        <div class="d-flex flex-row align-items-center">
+                                            <button class="btn btn-address mr-2 default-ship">Default shipping
+                                                address</button>
+                                            <button class="btn btn-address default-bill">Default billing
+                                                address</button>
+                                        </div>
+                                        <ul class="list-group mt-2">
+                                            <li class="list-group-item">Ataturk 65</li>
+                                            <li class="list-group-item">Second line</li>
+                                            <li class="list-group-item">3rd line</li>
+                                            <li class="list-group-item">Baku</li>
+                                            <li class="list-group-item">Baku</li>
+                                            <li class="list-group-item">AZ 1000</li>
+                                            <li class="list-group-item">Azerbaijan</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 my-addresses-cell">
+                                        <form class="col-12 p-0">
+                                            <select class="form-control form-select select-edit" name="" id="">
+                                                <option>Edit</option>
+                                                <option>Delete</option>
+                                                <option>Set as default shipping address</option>
+                                                <option>Set as default billing address</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

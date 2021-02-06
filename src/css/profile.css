@@ -3,8 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   outline: 0;
-  appearance: none;
+}
+
+*:not(span) {
   color: #2f2f30;
+}
+
+*:not(input[type="checkbox"]) {
+  appearance: none;
 }
 
 nav .breadcrumb {
@@ -16,20 +22,30 @@ nav ol li a {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 15px;
+  line-height: 20px;
   letter-spacing: 0em;
   color: #949495;
 }
 
 nav ol li a:hover {
   color: #2f2f30;
+  text-decoration: none;
 }
 
-h4 {
+.my-profile,
+.change-pass-title,
+.edit-prof-title,
+.delete-prof-title,
+.order-list-title,
+.address-bool-title,
+.new-address-title,
+.add-new-address-title,
+.my-address-title,
+.del-address-title,
+.wishlist-title {
   line-height: 29.6px;
   font-style: normal;
   font-weight: 800;
-  width: 100%;
   text-transform: uppercase;
 }
 
@@ -87,13 +103,15 @@ input[type="number"] {
   padding-bottom: 21px;
 }
 
-.profile--section .profile--tabs .nav-link.active {
+.profile--section .profile--tabs .nav-link.active,
+.profile--section .profile--tabs .nav-link:hover {
   background: none;
   color: #323334;
 }
+
 /* *********************************************** Hide profile-info,edit,delete Sections  ************************************** */
 
-.profile-info.hide,
+/* .profile-info.hide,
 .change-pass.hide,
 .delete-profile.hide,
 .address.hide,
@@ -103,12 +121,13 @@ input[type="number"] {
 .my-addresses.hide,
 .delete-address.hide {
   display: none;
-}
+} */
 
 /* *********************************************** Profile Info  ************************************** */
 
 .divider {
-  border: 1px solid #c4c4c4;
+  height: 1px;
+  background: #c4c4c4;
   margin: 28px 0 36px;
 }
 
@@ -123,16 +142,33 @@ input[type="number"] {
 }
 
 .profile-info .info--table .table-cell {
-  padding: 22px 26px;
+  padding: 16px 26px 5px 26px;
   border: 1px solid #c4c4c4;
+  text-align: left;
 }
 
-.btn {
+.profile-info .info--table .table-cell p {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+.profile-info .info--table .col-sm-4.table-cell p {
+  font-weight: 600;
+}
+.profile-info .info--table .col-sm-8.table-cell p {
+  font-weight: 400;
+}
+
+.btn:not(.shop):not() {
   width: 218px;
   height: 33px;
 }
 
-.btn-profile {
+.btn-profile,
+.btn-quantity {
   position: relative;
   background: #2f2f30;
   text-transform: uppercase;
@@ -145,7 +181,8 @@ input[type="number"] {
   color: #f6f6f7;
 }
 
-.btn-profile:after {
+.btn-profile::after,
+.btn-quantity::after {
   content: "";
   height: 100%;
   left: 0;
@@ -157,14 +194,17 @@ input[type="number"] {
   z-index: -1;
 }
 
-.btn-profile:hover {
+.btn-profile:hover,
+.btn-quantity:hover {
   outline: none;
   color: #2f2f30;
 }
 
-.btn-profile:hover:after {
+.btn-profile:hover::after,
+.btn-quantity:hover::after {
   background-color: #fff;
   width: 100%;
+  border: 1px solid #2f2f30;
 }
 
 /* *********************************************** Change Password  ************************************** */
@@ -223,6 +263,8 @@ input[type="number"] {
 }
 
 .save-btn {
+  width: 92px;
+  height: 33px;
   position: relative;
   background: #2f2f30;
   text-transform: uppercase;
@@ -235,7 +277,7 @@ input[type="number"] {
   color: #f6f6f7;
 }
 
-.save-btn:after {
+.save-btn::after {
   content: "";
   height: 100%;
   left: 0;
@@ -245,7 +287,6 @@ input[type="number"] {
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.5s ease 0s;
   z-index: -1;
-  border: 1px solid transparent;
 }
 
 .save-btn:hover {
@@ -253,13 +294,15 @@ input[type="number"] {
   color: #2f2f30;
 }
 
-.save-btn:hover:after {
+.save-btn:hover::after {
   background-color: #fff;
   width: 100%;
   border: 1px solid #2f2f30;
 }
 
 .cancel-btn {
+  width: 92px;
+  height: 33px;
   position: relative;
   background: #f6f6f7 !important;
   text-transform: uppercase;
@@ -273,7 +316,7 @@ input[type="number"] {
   border: 1px solid !important;
 }
 
-.cancel-btn:after {
+.cancel-btn::after {
   content: "";
   height: 100%;
   left: 0;
@@ -283,18 +326,17 @@ input[type="number"] {
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.5s ease 0s;
   z-index: -1;
-  border: 1px solid transparent;
 }
 
 .cancel-btn:hover {
   outline: none;
   color: #f6f6f7 !important;
+  border: 1px solid #000 !important;
 }
 
-.cancel-btn:hover:after {
+.cancel-btn:hover::after {
   background-color: #2f2f30 !important;
   width: 100%;
-  border: 1px solid #f6f6f7 !important;
 }
 
 /* *********************************************** Edit Profile  ************************************** */
@@ -337,16 +379,57 @@ input[type="number"] {
 
 /* *********************************************** Add new address  ************************************** */
 
+.address-book-title {
+  text-transform: uppercase;
+  color: #2f2f30;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.add-new-address .btn.btn-add-address {
+  color: #fff;
+  border: 1px solid #000 !important;
+}
+
+.add-new-address .btn.btn-add-address::after {
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0px;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  z-index: -1;
+}
+
+.add-new-address .btn.btn-add-address:hover {
+  color: #2f2f30;
+  border: 1px solid !important;
+}
+
+.add-new-address .btn.btn-add-address:hover::after {
+  background: #f6f6f7;
+  width: 100%;
+}
+
 .add-new-address .alert {
   background: #edf0f6;
   height: 57px;
 }
 
 .add-new-address .alert i,
-.add-new-address .alert p {
+.add-new-address .alert span {
   color: #0343a2;
   font-size: 14px;
   line-height: 17.07px;
+}
+
+.add-new-address .alert span {
   font-weight: 500;
 }
 
@@ -386,10 +469,10 @@ input[type="number"] {
   .row:last-child
   .address-table-cell
   .select-edit {
-  min-width: 97px;
   width: 300px;
   height: 50px;
   border: 1px solid #c4c4c4;
+  border-radius: 0;
   color: #000;
   background: url("../../assets/icon/down-arrow.svg"), transparent;
   background-repeat: no-repeat;
@@ -410,26 +493,29 @@ input[type="number"] {
 
 /* *********************************************** Added address  ************************************** */
 
-.added-address-table .added-address-cell {
+.my-addresses-table .my-addresses-cell {
   border: 1px solid #c4c4c4;
   padding: 22px 0 0 23px;
 }
 
-.added-address-table .row:first-child .added-address-cell {
+.my-addresses-table .row:first-child .my-addresses-cell:first-child span {
+  font-weight: 600;
+}
+.my-addresses-table .row:first-child .my-addresses-cell {
   height: 60px;
   padding: 22px;
 }
 
-.added-address-table .row:last-child .added-address-cell {
+.my-addresses-table .row:last-child .my-addresses-cell {
   height: 380px;
   padding: 22px;
 }
 
-.added-address-table .row:first-child .added-address-cell:last-child {
+.my-addresses-table .row:first-child .my-addresses-cell:last-child {
   position: relative;
 }
 
-.my-addresses .added-address-table .added-address-cell .close-table {
+.my-addresses .my-addresses-table .my-addresses-cell .close-table {
   position: absolute;
   top: 8px;
   right: 0;
@@ -439,23 +525,30 @@ input[type="number"] {
   height: 40px;
   cursor: pointer;
   padding: 8px 10px;
+  text-decoration: none;
 }
 
-.added-address-table .added-address-cell .btn-address {
+.my-addresses .my-addresses-table .my-addresses-cell .btn-address {
   position: relative;
-  background: #2f2f30;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17.07px;
   letter-spacing: 0em;
   padding: 8px 16px;
-  color: #f6f6f7;
   width: auto;
 }
 
-.added-address-table .added-address-cell .btn-address:after {
+.my-addresses
+  .my-addresses-table
+  .my-addresses-cell
+  .btn-address:not(.default-bill) {
+  background: #2f2f30;
+  color: #f6f6f7;
+}
+
+.my-addresses .my-addresses-table .my-addresses-cell .btn-address::after {
   content: "";
   height: 100%;
   left: 0;
@@ -467,18 +560,44 @@ input[type="number"] {
   z-index: -1;
 }
 
-.added-address-table .added-address-cell .btn-address:hover {
+.my-addresses
+  .my-addresses-table
+  .my-addresses-cell
+  .btn-address:not(.default-bill):hover {
   outline: none;
   color: #2f2f30;
 }
 
-.added-address-table .added-address-cell .btn-address:hover:after {
+.my-addresses
+  .my-addresses-table
+  .my-addresses-cell
+  .btn-address:not(.default-bill):hover::after {
   background-color: #fff;
   width: 100%;
-  border: 1px solid #2f2f30;
 }
 
-.added-address-table .list-group .list-group-item {
+.my-addresses .my-addresses-table .my-addresses-cell .btn-address.default-bill {
+  background: transparent !important;
+  border: 1px solid !important;
+}
+
+.my-addresses
+  .my-addresses-table
+  .my-addresses-cell
+  .btn-address.default-bill:hover {
+  color: white;
+  outline: none;
+}
+
+.my-addresses
+  .my-addresses-table
+  .my-addresses-cell
+  .btn-address.default-bill:hover::after {
+  background-color: #2f2f30;
+  width: 100%;
+}
+
+.my-addresses .my-addresses-table .list-group .list-group-item {
   background: none;
   border: 0;
   font-size: 16px;
@@ -490,11 +609,12 @@ input[type="number"] {
   padding: 10px 0 6px 0;
 }
 
-.my-addresses .added-address-table .added-address-cell .select-edit {
-  min-width: 97px;
-  width: 270px;
+.my-addresses .my-addresses-table .my-addresses-cell .select-edit {
+  width: 97px;
   height: 50px;
   border: 1px solid #c4c4c4;
+  border-radius: 0;
+  box-sizing: border-box;
   color: #000;
   background: url("../../assets/icon/down-arrow.svg"), transparent;
   background-repeat: no-repeat;
@@ -505,7 +625,7 @@ input[type="number"] {
   font-weight: 500;
 }
 
-.my-addresses .added-address-table .added-address-cell .select-edit:focus {
+.my-addresses .my-addresses-table .my-addresses-cell .select-edit:focus {
   box-shadow: none;
 }
 
@@ -538,7 +658,7 @@ input[type="number"] {
   color: #f6f6f7;
 }
 
-.delete-address .row:last-child .delete-btn:after {
+.delete-address .row:last-child .delete-btn::after {
   content: "";
   height: 100%;
   left: 0;
@@ -555,8 +675,276 @@ input[type="number"] {
   color: #2f2f30;
 }
 
-.delete-address .row:last-child .delete-btn:hover:after {
+.delete-address .row:last-child .delete-btn:hover::after {
   background-color: #fff;
   width: 100%;
   border: 1px solid #2f2f30;
+}
+
+/* *********************************************** Wishlist  ************************************** */
+
+.wishlist .close-wishlist-table {
+  padding: 8px 10px;
+  color: #949495;
+  transform: rotate(45deg);
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.wishlist .wishlist-table {
+  height: 297px;
+}
+
+.wishlist .wishlist-table .row:nth-child(1) .wishlist-table-cell {
+  height: 64px;
+}
+
+.wishlist .wishlist-table .row:nth-child(2) .wishlist-table-cell {
+  height: 233px;
+}
+
+.wishlist .wishlist-table .wishlist-table-cell {
+  border: 1px solid #c4c4c4;
+  padding: 22px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: flex-start;
+  color: #000;
+}
+
+.wishlist
+  .wishlist-table
+  .wishlist-table-cell
+  .list-group
+  .list-group-item.default {
+  color: #0343a2;
+}
+
+.wishlist .wishlist-table .wishlist-table-cell .list-group .list-group-item {
+  padding: 0;
+  background: none;
+  border: 0;
+  line-height: 19.5px;
+  font-weight: 500;
+}
+
+.wishlist .wishlist-table .wishlist-table-cell .select-edit.toggle {
+  border: 1px solid #c4c4c4;
+  height: 50px;
+  width: 97px;
+  background: url("../../assets/icon/down-arrow.svg"), #f6f6f7;
+  background-repeat: no-repeat;
+  background-position: 92% 50%;
+  cursor: pointer;
+}
+
+.wishlist .wishlist-table .wishlist-table-cell .select-edit.toggle:focus,
+.wishlist-info
+  .wishlist-info-table
+  .wishlist-info-table-cell
+  .select-edit.toggle:focus {
+  box-shadow: none;
+}
+
+.wishlist .btn-wishlist {
+  position: relative;
+  background: #2f2f30;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17.07px;
+  letter-spacing: 0em;
+  padding: 8px 16px;
+  color: #f6f6f7;
+}
+
+.wishlist .btn-wishlist::after {
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0px;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  z-index: -1;
+}
+
+.wishlist .btn-wishlist:hover {
+  outline: none;
+  color: #2f2f30;
+}
+
+.wishlist .btn-wishlist:hover::after {
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #2f2f30;
+}
+
+/* *********************************************** Wishlist  ************************************** */
+
+.new-wishlist .row:nth-child(3) .col-12 p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2f2f30;
+  margin-bottom: 20px;
+}
+
+.new-wishlist form .row .col-12 .form-group label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17.07px;
+}
+
+.new-wishlist form .row .col-12 .form-group label span {
+  color: red;
+}
+
+.new-wishlist form .row .col-12 .form-group input[type="text"].form-control {
+  width: 100%;
+}
+
+/* *********************************************** Wishlist Info  ************************************** */
+
+.wishlist-info .wishlist-info-table {
+  height: 362px;
+}
+
+.wishlist-info .wishlist-info-table .wishlist-info-table-cell {
+  border: 1px solid #c4c4c4;
+  padding: 22px;
+}
+
+.wishlist-info .wishlist-info-table .row:first-child .wishlist-info-table-cell {
+  font-weight: 600;
+  height: 64px;
+  line-height: 19.5px;
+}
+
+.wishlist-info
+  .wishlist-info-table
+  .row:first-child
+  .wishlist-info-table-cell:last-child {
+  position: relative;
+}
+
+.wishlist-info
+  .wishlist-info-table
+  .row:first-child
+  .wishlist-info-table-cell:last-child
+  a {
+  position: absolute;
+  color: #949495;
+  transform: rotate(45deg);
+  display: inline-block;
+  top: 4px;
+  right: 10px;
+  text-decoration: none;
+  padding: 8px 10px;
+}
+
+.wishlist-info
+  .wishlist-info-table
+  .row:nth-child(2)
+  .wishlist-info-table-cell {
+  height: 231px;
+}
+
+.wishlist-info
+  .wishlist-info-table
+  .row:nth-child(2)
+  .wishlist-info-table-cell
+  .row
+  .col-7,
+.wishlist-info
+  .wishlist-info-table
+  .row:nth-child(2)
+  .wishlist-info-table-cell
+  .row
+  .col-5 {
+  height: 231px;
+  padding: 22px;
+}
+
+.wishlist-info
+  .wishlist-info-table
+  .row:nth-child(2)
+  .wishlist-info-table-cell
+  .row
+  .col-7 {
+  border-right: 1px solid #c4c4c4;
+}
+
+.wishlist-info
+  .wishlist-info-table
+  .row:nth-child(2)
+  .wishlist-info-table-cell
+  .wishlist-product-image {
+  width: 145px;
+  height: 104px;
+  background: #c4c4c4;
+}
+
+.wishlist-info
+  .wishlist-info-table
+  .wishlist-info-table-cell
+  .wishlist-product-name
+  span {
+  color: #0343a2;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.wishlist-info
+  .wishlist-info-table
+  .row:nth-child(2)
+  .wishlist-info-table-cell
+  .form-group
+  input[type="text"] {
+  width: 68px;
+  height: 50px;
+  background: transparent;
+}
+
+.wishlist-info
+  .wishlist-info-table
+  .wishlist-info-table-cell
+  .select-edit.toggle {
+  border: 1px solid #c4c4c4;
+  height: 50px;
+  width: 97px;
+  background: url("../../assets/icon/down-arrow.svg"), #f6f6f7;
+  background-repeat: no-repeat;
+  background-position: 92% 50%;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* *********************************************** Wishlist Info  ************************************** */
+
+.move-wishlist .row:nth-child(3) .alert {
+  background: #edf0f6;
+  height: 57px;
+  padding: 20px;
+}
+
+.move-wishlist .row:nth-child(3) .alert i,
+.move-wishlist .row:nth-child(3) .alert span {
+  font-size: 14px;
+  color: #0343a2;
+}
+
+.move-wishlist .row:nth-child(3) .alert i {
+  margin-right: 13px;
+}
+
+.move-wishlist .row:nth-child(3) .alert span {
+  font-weight: 500;
 }

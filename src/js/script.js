@@ -77,3 +77,49 @@ $('#accept').click(function() {
     	$('#submitbtn').attr('disabled', 'disabled');
     }
 });
+
+
+
+///for show hide images 
+
+// $("#show").hover(function(){
+//   $("#hide").show();
+// },function(){
+//   $("#hide").hide();
+// });
+
+
+// Sign css show hide wrong password alert
+// $(".login").click(function() {
+  
+//   var alert = $(".login").text().trim();
+
+//   if(alert == "Hide") {
+//     $(".login").text("Show");
+//     $(".alert").hide();
+//   }
+//   else {
+//     $(".login").text("Hide");
+//     $(".alert").show();
+//   }
+//  });
+
+//  $(document).ready(function () {
+//   $(".login").click(function () {
+//       $(".alert").addClass("hide"); 
+//   }, function () {
+//       $(".alert").addClass("hide");
+//   });
+// });
+
+
+
+//Breadcrumb and tabs relation in profile.html
+// var activeBreadcrumb = $('.active-breadcrumb');
+
+// $('.nav').on('click','.nav-link',function(){
+//     var self = $(this);
+//     activeBreadcrumb.attr('href',self.data('url'));
+//     activeBreadcrumb.text(self.text());
+// });
+

@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="./src/css/sign.css">
     <link rel="stylesheet" href="./src/css/drop.css">
     <link rel="stylesheet" href="./src/css/profile.css">
-    <title>Profile</title>
+    <title>Edit Profile</title>
+</head>
 
 <body>
-    <!---------------------------------------- Header Start ------------------------------------>
     <header>
         <!---------------------------------------- Navbar  Start ----------------------------------->
         <nav class="navbar navbar-expand-sm nav-1 px-4 py-0 navbar-light">
@@ -1028,14 +1028,11 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item"><a href="#">Account</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><a href="#">Profile</a></li>
+            <li class="breadcrumb-item"><a href="#">Profile</a></li>
+            <li class="breadcrumb-item"><a href="#">My profile</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#">Edit profile</a></li>
         </ol>
     </nav>
-
-    <!---------------------------------------- Breadcrumb End ------------------------------------->
-
-
-    <!---------------------------------------- Profile Start ------------------------------------->
 
     <section class="profile--section">
         <div class="row">
@@ -1059,61 +1056,45 @@
             <div class="tab-content col-sm-8" id="v-pills-tabContent">
                 <div class="profile row tab-pane fade show active" id="v-pills-profile" role="tabpanel"
                     aria-labelledby="v-pills-profile-tab">
-                    <div class="profile-info col-12">
+                    <div class="col-12 edit-profile">
                         <div class="row">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h4 class="my-profile">My Profile</h4>
-                                </div>
+                            <div class="col-12 p-0">
+                                <h4 class="edit-prof-title">edit profile</h4>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 divider"></div>
                         </div>
-                        <div class="row">
-                            <div class="col-12 info--table">
+                        <form>
+                            <fieldset>
                                 <div class="row">
-                                    <div class="col-sm-4 table-cell">
-                                        <p>Name</p>
-                                    </div>
-                                    <div class="col-sm-8 table-cell">
-                                        <p>-</p>
+                                    <div class="col-12 form-group p-0">
+                                        <label>First Name <span>*</span></label>
+                                        <input type="text">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-4 table-cell">
-                                        <p>Email address</p>
-                                    </div>
-                                    <div class="col-sm-8 table-cell">
-                                        <p>username@gmail.com</p>
+                                    <div class="col-12 form-group p-0">
+                                        <label>Last Name <span>*</span></label>
+                                        <input type="text">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-4 table-cell">
-                                        <p>Date registered</p>
-                                    </div>
-                                    <div class="col-sm-8 table-cell">
-                                        <p>Jan 9,2021, 11:30 a.m.</p>
+                                    <div class="col-12 form-group p-0">
+                                        <label>Email Address <span>*</span></label>
+                                        <input type="email">
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="info--buttons">
+                            </fieldset>
                             <div class="row">
-                                <div class="border p-0 mr-2 btn">
-                                    <a href="changepassword.html" class="w-100 m-0 btn btn-profile btn-pass">change the
-                                        password</a>
-                                </div>
-                                <div class="border p-0 mr-2 btn">
-                                    <a href="editprofile.html" class="w-100 m-0 btn btn-profile btn-edit">edit
-                                        profile</a>
-                                </div>
-                                <div class="border p-0 mr-2 btn">
-                                    <a href="deleteprofile.html" class="w-100 m-0 btn btn-profile btn-delete">delete
-                                        profile</a>
+                                <div class="col-12 p-0">
+                                    <div class="d-flex">
+                                        <a class="btn save-btn mr-3">Save</a>
+                                        <a href="profile.html" class="btn cancel-btn">Cancel</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <div class="row tab-pane fade order-history" id="v-pills-order" role="tabpanel"
@@ -1134,7 +1115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row tab-pane fade" id="v-pills-address" role="tabpanel"
+                <div class="row tab-pane fade order-history" id="v-pills-address" role="tabpanel"
                     aria-labelledby="v-pills-address-tab">
                     <div class="col-12 p-0 address">
                         <div class="row">
@@ -1152,8 +1133,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 p-0">
-                                <a href="addnewaddress.html" class="btn btn-profile btn-add-address d-inline-block">Add
-                                    a new address</a>
+                                <button class="btn btn-profile btn-add-address">Add a new address</button>
                             </div>
                         </div>
                     </div>
@@ -1220,114 +1200,10 @@
             </div>
         </div>
     </section>
-
-    <!---------------------------------------- Profile End ------------------------------------->
-
-    <!---------------------------------------- Footer Start ----------------------------------->
-
-    <footer class="footer-section">
-        <div class="container">
-            <div class="footer-content py-5">
-                <div class="row">
-                    <div class="col-xl-2 col-lg-4 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Company Info</h3>
-                            </div>
-                            <ul>
-                                <li><a href="#">Your cart</a></li>
-                                <li><a href="#">Your orders</a></li>
-                                <li><a href="#">Compared items</a></li>
-                                <li><a href="#">Wishlist items</a></li>
-                                <li><a href="#">Shipping detail</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Support</h3>
-                            </div>
-                            <ul>
-                                <li><a href="#">Help</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Caree Center</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>customer care</h3>
-                            </div>
-                            <ul>
-                                <li><a href="#">Gift Center</a></li>
-                                <li><a href="#">Buying Guides</a></li>
-                                <li><a href="#">New Arrivals</a></li>
-                                <li><a href="#">Clearance</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-4 col-md-6 mb-50 ml-auto">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Find us on </h3>
-                            </div>
-                            <div class="footer-social-icon">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                            </div>
-                            <div class="footer-text mb-25">
-                                <p>SIGN UP FOR BLACKSTREET STYLE NEWS</p>
-                            </div>
-                            <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Your Email Address">
-                                    <button>
-                                        <p>Subscribe</p>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="copyright-area">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6 text-center text-lg-left">
-                                <div class="copyright-text">
-                                    <p>Blackstreet © – All rights reserved</p>
-                                </div>
-                            </div>
-                            <div class="col-xl-5 col-lg-6 text-center text-lg-right">
-                                <div class="copyright-title">
-                                    <p>we accept</p>
-                                </div>
-                                <div class="copyright-img">
-                                    <ul>
-                                        <li><img src="./assets/logo/Screen Shot 2021-01-16 at 2.31 1.png" alt=""></li>
-                                        <li><img src="./assets/logo/Screen Shot 2021-01-16 at 2.31 2.png" alt=""></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </footer>
-
-    <!---------------------------------------- Footer End ------------------------------------->
-
-
     <script src="./src/js/min/jquery.min.js"></script>
     <script src="./src/js/min/bootstrap.min.js"></script>
     <script src="src/js/min/popper.min.js"></script>
     <script src="src/js/script.js"></script>
-
 </body>
 
 </html>

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./src/css/sign.css">
     <link rel="stylesheet" href="./src/css/drop.css">
     <link rel="stylesheet" href="./src/css/profile.css">
-    <title>Profile</title>
+    <title>Add a New Address</title>
 
 <body>
     <!---------------------------------------- Header Start ------------------------------------>
@@ -1028,7 +1028,8 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item"><a href="#">Account</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><a href="#">Profile</a></li>
+            <li class="breadcrumb-item"><a href="#">Address book</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#">Add a new address</a></li>
         </ol>
     </nav>
 
@@ -1041,12 +1042,12 @@
         <div class="row">
             <div class="col-sm-4 profile--tabs nav nav-pills" id="v-pills-tab" role="tablist"
                 aria-orientation="vertical">
-                <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
-                    role="tab" aria-controls="v-pills-profile" aria-selected="true">Profile</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                    aria-controls="v-pills-profile" aria-selected="true">Profile</a>
                 <a class="nav-link" id="v-pills-order-tab" data-toggle="pill" href="#v-pills-order" role="tab"
                     aria-controls="v-pills-order" aria-selected="false">Order History</a>
-                <a class="nav-link" id="v-pills-address-tab" data-toggle="pill" href="#v-pills-address" role="tab"
-                    aria-controls="v-pills-address" aria-selected="false">Address Book</a>
+                <a class="nav-link active" id="v-pills-address-tab" data-toggle="pill" href="#v-pills-address"
+                    role="tab" aria-controls="v-pills-address" aria-selected="false">Address Book</a>
                 <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
                     aria-controls="v-pills-profile" aria-selected="false">Email History</a>
                 <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
@@ -1057,7 +1058,7 @@
                     aria-controls="v-pills-wishlist" aria-selected="false">Wish List</a>
             </div>
             <div class="tab-content col-sm-8" id="v-pills-tabContent">
-                <div class="profile row tab-pane fade show active" id="v-pills-profile" role="tabpanel"
+                <div class="profile row tab-pane fade" id="v-pills-profile" role="tabpanel"
                     aria-labelledby="v-pills-profile-tab">
                     <div class="profile-info col-12">
                         <div class="row">
@@ -1134,26 +1135,62 @@
                         </div>
                     </div>
                 </div>
-                <div class="row tab-pane fade" id="v-pills-address" role="tabpanel"
+                <div class="row tab-pane fade show active" id="v-pills-address" role="tabpanel"
                     aria-labelledby="v-pills-address-tab">
-                    <div class="col-12 p-0 address">
+                    <div class="col-12 p-0 add-new-address">
                         <div class="row">
                             <div class="col-12 p-0">
-                                <h4 class="address-book-title">address book</h4>
+                                <h4 class="add-new-address-title">add a new address</h4>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 divider p-0"></div>
                         </div>
                         <div class="row">
-                            <div class="col-12 p-0 my-4">
-                                <p>There are no addresses in your address book.</p>
+                            <div class="col-12 p-0">
+                                <div class="alert d-flex flex-row align-items-center">
+                                    <i class="fas fa-check-circle mr-2"></i>
+                                    <span>Address ‘Mr Shaig Muradov, Ataturk 65, Second line, 3rd line, Baku, AZ 1000,
+                                        Azerbaijan’ created</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row address-table m-0">
                             <div class="col-12 p-0">
-                                <a href="addnewaddress.html" class="btn btn-profile btn-add-address d-inline-block">Add
-                                    a new address</a>
+                                <div class="row">
+                                    <div class="col-4 address-table-cell p4-2 px-5">
+                                        <span>Address</span>
+                                    </div>
+                                    <div class="col-8 address-table-cell p-0"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4 address-table-cell p-0">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Ataturk 65</li>
+                                            <li class="list-group-item">Second line</li>
+                                            <li class="list-group-item">3rd line</li>
+                                            <li class="list-group-item">Baku</li>
+                                            <li class="list-group-item">Baku</li>
+                                            <li class="list-group-item">AZ 1000</li>
+                                            <li class="list-group-item">Azerbaijan</li>
+                                        </ul>
+                                    </div>
+                                    <form class="col-8 p-0">
+                                        <div class="form-group address-table-cell m-0">
+                                            <select class="form-control form-select select-edit toggle" name="" id="">
+                                                <option>Edit</option>
+                                                <option>Delete</option>
+                                                <option>Set as default shipping address</option>
+                                                <option>Set as default billing address</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <div class="row">
+                                        <div class="col-12 pt-3 pr-4">
+                                            <a href="addnewaddress.html" class="btn btn-add-address">Add a new address</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
