@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./src/css/profile.css">
     <link rel="stylesheet" href="./src/css/category.css">
     <link rel="stylesheet" href="./src/css/no-register.css">
-    <title>blackstreet | Forgot Password ?</title>
+    <title>blackstreet | Sign In/Up</title>
 </head>
 <body>
 <!---------------------------------------- Header Start ------------------------------------>
@@ -735,25 +735,46 @@
 <!---------------------------------------- Header End ------------------------------------->
 
 <!---------------------------------------- Sections Start --------------------------------->
-<section class="fogotten py-5">
-    <div class="container">
-        <div class="row h-100">
-            <div class="col-lg-6 mx-auto">
-                <div class="forgotten-message d-flex px-0">
-                    <h3 class="forgotten-message-title my-3">Forgotten Password</h3>
-                    <p class="forgotten-info">If you’ve forgotten your password, please enter your registered email address.
-                        We’ll send you a link to reset your password.
-                    </p>
-                        <input type="email" class="form_input my-3" name="email">
-                        <div class="buttons d-flex">
-                            <a href="" class="btn cancel">Cancel</a>
-                            <a href="" class="btn continue">Continue</a>
+<section class="new-register-signup px-0">
+    <div class="container px-0">
+        <div class="row px-0">
+            <div class="col-lg-3 ml-auto pl-5 pr-0 mt-5 d-flex continue-button">
+                <a href="" class="cont-shop ml-4">continue shopping</a>
+                <img src="./assets/icon/Vector 34.png" alt="" width="6px" height="12px" class="cont-img ml-4">
+            </div>
+        </div>
+        <div class="row pl-5 pr-0 position-relative">
+            <div class="col-lg-6 col-md-6 mx-auto sign-up">
+                <div class="login-card">
+                    <h2 class="login-card-title text-center mb-5">New to Blackstreet</h2>
+                    <form action="">
+                        <p>
+                            <label for="email">Email adress:</label>
+                            <input type="email" class="form-input" name="email">
+                        </p>
+                        <p>
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-input" name="password">
+                        </p>
+                        <p>
+                            <label for="password">Confirm Password:</label>
+                            <input type="password" class="form-input" name="password">
+                        </p>
+                        <div class="agreement">
+                        <label for="checkbox"><input class="checkbox agreement-checkbox" id="accept" name="accept" type="checkbox" value="y"/><span>I agree to the <a href="">Privacy & Cookie Policy</a><br>
+                            and <a href="">Terms & Conditions</a></span></label>
+                        <br>
+                        <label for="checkbox"><input class="checkbox agreement-checkbox" id="accept" name="accept" type="checkbox" value="y"/><span>I’d like to receive exclusive offers and <br>
+                            latest news by email.</span></label>
                         </div>
+                        <button name="Submit" type="submit" id="submit-btn" class="btn login register" value="Register">Register</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <!---------------------------------------- Sections End ----------------------------------->
 
 
@@ -818,7 +839,7 @@
                         <div class="subscribe-form">
                             <form action="#">
                                 <input type="text" placeholder="Your Email Address">
-                                <button><p class="subscribe">Subscribe</p></button>
+                                <button><p>Subscribe</p></button>
                             </form>
                         </div>
                     </div>
@@ -851,11 +872,6 @@
     </div>
 </footer>
 <!---------------------------------------- Footer End ------------------------------------->
-
-
-
-
-
 
 
 <script src="./src/js/min/jquery.min.js"></script>

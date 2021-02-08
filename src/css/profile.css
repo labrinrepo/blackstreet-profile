@@ -5,9 +5,9 @@
   outline: 0;
 }
 
-*:not(span) {
+/* *:not(span):not(.rate) {
   color: #2f2f30;
-}
+} */
 
 *:not(input[type="checkbox"]) {
   appearance: none;
@@ -19,6 +19,7 @@ nav .breadcrumb {
 
 nav ol li a {
   text-decoration: none;
+  text-transform: capitalize;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -42,7 +43,8 @@ nav ol li a:hover {
 .add-new-address-title,
 .my-address-title,
 .del-address-title,
-.wishlist-title {
+.wishlist-title,
+.email-history-title {
   line-height: 29.6px;
   font-style: normal;
   font-weight: 800;
@@ -171,13 +173,15 @@ input[type="number"] {
 .btn-quantity {
   position: relative;
   background: #2f2f30;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 17.07px;
   letter-spacing: 0em;
   padding: 8px 16px;
+  width: 180px;
+  height: 36px;
   color: #f6f6f7;
 }
 
@@ -740,6 +744,7 @@ input[type="number"] {
   background-repeat: no-repeat;
   background-position: 92% 50%;
   cursor: pointer;
+  border-radius: 0;
 }
 
 .wishlist .wishlist-table .wishlist-table-cell .select-edit.toggle:focus,
@@ -947,4 +952,347 @@ input[type="number"] {
 
 .move-wishlist .row:nth-child(3) .alert span {
   font-weight: 500;
+}
+
+/* *********************************************** Order History  ************************************** */
+
+.order-history .order-details-form label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.07px;
+}
+
+.order-history .order-details-form input[type="date"] {
+  background: url("../../assets/icon/calendar.svg"), transparent;
+  background-repeat: no-repeat;
+  background-position: 92% 50%;
+  cursor: pointer;
+}
+
+.order-history .order-details-form input {
+  height: 50px;
+  padding: 0px 12px 0px 12px;
+  background: none;
+  -webkit-appearance: none;
+  border: 1px solid #c4c4c4;
+}
+
+.order-history
+  .order-details-form
+  input[type="number"]::-webkit-inner-spin-button,
+.order-history
+  .order-details-form
+  input[type="number"]::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.order-history .order-details-form input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* 
+.order-history
+  .order-details-form
+  input[type="date"]::-webkit-datetime-edit-text,
+.order-history
+  .order-details-form
+  input[type="date"]::-webkit-datetime-edit-month-field,
+.order-history
+  .order-details-form
+  input[type="date"]::-webkit-datetime-edit-day-field,
+.order-history
+  .order-details-form
+  input[type="date"]::-webkit-datetime-edit-year-field {
+  color: transparent !important;
+} */
+
+.order-history
+  .order-details-form
+  input[type="date"]::-webkit-datetime-edit-text:focus,
+.order-history
+  .order-details-form
+  input[type="date"]::-webkit-datetime-edit-month-field:focus,
+.order-history
+  .order-details-form
+  input[type="date"]::-webkit-datetime-edit-day-field:focus,
+.order-history
+  .order-details-form
+  input[type="date"]::-webkit-datetime-edit-year-field:focus {
+  background: transparent;
+  color: black;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.btn-filter {
+  position: relative;
+  background: #2f2f30;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17.07px;
+  letter-spacing: 0em;
+  padding: 8px 16px;
+  width: 180px;
+  height: 36px;
+  color: #f6f6f7;
+  margin-top: 28px;
+}
+
+.btn-filter::after {
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0px;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  z-index: -1;
+}
+
+.btn-filter:hover {
+  outline: none;
+  color: #2f2f30;
+}
+
+.btn-filter:hover::after {
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #2f2f30;
+}
+
+.btn-reset {
+  position: relative;
+  background: #fff !important;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17.07px;
+  letter-spacing: 0em;
+  padding: 8px 16px;
+  width: 180px;
+  height: 36px;
+  color: #2f2f30;
+  border: 1px solid !important;
+  margin-top: 28px;
+}
+
+.btn-reset::after {
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0px;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  z-index: -1;
+}
+
+.btn-reset:hover {
+  outline: none;
+  color: #fff;
+}
+
+.btn-reset:hover::after {
+  background-color: #2f2f30;
+  width: 100%;
+  border: 1px solid #2f2f30 !important;
+}
+
+.order-history .orders-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.38px;
+  margin-top: 65px;
+}
+
+.order-history .orders-table .orders-table-cell {
+  border: 1px solid #c4c4c4;
+  padding: 22px;
+}
+
+.order-history .orders-table .row:nth-child(1) .orders-table-cell span {
+  font-weight: 600;
+  line-height: 19.5px;
+}
+
+.order-history .orders-table .row:nth-child(1) .orders-table-cell:nth-child(1),
+.order-history .orders-table .row:nth-child(1) .orders-table-cell:nth-child(2),
+.order-history .orders-table .row:nth-child(1) .orders-table-cell:nth-child(3) {
+  width: 215px;
+}
+
+.order-history .orders-table .row:nth-child(1) .orders-table-cell:nth-child(3) {
+  width: 330px;
+}
+
+.order-history .orders-table .orders-table-cell.order-number {
+  color: #0343a2;
+}
+
+.order-history .pages-num {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 28px 0 0 0;
+  margin-left: -18px;
+}
+
+/* *********************************************** Email History  ************************************** */
+
+.email-history-table {
+  margin-bottom: 58px;
+}
+
+.email-history-table .email-history-table-cell {
+  padding: 22px;
+  border: 1px solid #c4c4c4;
+  color: #000;
+}
+
+.email-history-table .row:nth-child(1) .email-history-table-cell span {
+  font-weight: 600;
+}
+
+.email-info-table {
+  border: 1px solid #c4c4c4;
+}
+
+.email-info-table .col-lg-2 {
+  height: 708px;
+}
+
+.email-info-table .email-info-table-cell {
+  padding: 22px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.email-info-table .col-lg-10.email-info-table-cell {
+  padding: 22px 56px;
+  min-height: 708px;
+  border-left: 1px solid #c4c4c4;
+}
+
+.email-info-table .col-lg-10.email-info-table-cell .include,
+.email-info-table .col-lg-10.email-info-table-cell .delivery {
+  font-weight: 600;
+  margin-top: 28px;
+}
+
+.email-info-table .col-lg-10.email-info-table-cell .list-group {
+  padding-top: 0;
+}
+
+.email-info-table
+  .col-lg-10.email-info-table-cell
+  .list-group
+  .list-group-item {
+  background: transparent;
+  border: 0;
+  padding: 0 0 4px 0;
+}
+
+/* *********************************************** Orders  ************************************** */
+
+.orders .orders-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.38px;
+  margin-top: 65px;
+}
+
+.orders .orders-table .table-cell {
+  border: 1px solid #c4c4c4;
+  padding: 18px 0 18px 18px;
+}
+
+.orders .orders-table .row:nth-child(1) .table-cell span {
+  font-weight: 600;
+}
+
+.orders .orders-table .row:nth-child(2) .table-cell:first-child span {
+  color: #0343a2;
+}
+
+.orders .orders-table .row:nth-child(2) .table-cell {
+  height: 128px;
+}
+
+.btn-reorder,
+.btn-reorder-all {
+  position: relative;
+  background: #2f2f30;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  width: 111px;
+  line-height: 17.07px;
+  letter-spacing: 0em;
+  padding: 8px 16px;
+  height: 36px;
+  color: #f6f6f7;
+  margin-left: -10px;
+}
+
+.btn-reorder-all {
+  width: 190px;
+  margin-top: 44px;
+  margin-left: 0;
+}
+
+.btn-reorder::after,
+.btn-reorder-all::after {
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0px;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  z-index: -1;
+}
+
+.btn-reorder:hover,
+.btn-reorder-all:hover {
+  outline: none;
+  color: #2f2f30;
+}
+
+.btn-reorder:hover::after,
+.btn-reorder-all:hover::after {
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #2f2f30;
+}
+
+.shipping-table .table-cell {
+  border: 1px solid #c4c4c4;
+  padding: 22px;
+}
+
+.shipping-table .row:nth-child(1) .table-cell span {
+  font-weight: 600;
+}
+
+.shipping-table .row:nth-child(2) .table-cell {
+  height: 312px;
+}
+
+.shipping-table .row:nth-child(2) .table-cell .list-group {
+  padding-top: 22px;
+}
+
+.shipping-table .row:nth-child(2) .table-cell .list-group .list-group-item {
+  background: transparent;
+  border: 0;
+  padding-top: 0;
+  padding-bottom: 5px;
 }

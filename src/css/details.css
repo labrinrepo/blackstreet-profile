@@ -29,6 +29,7 @@ body:not(footer){
 
 .product-detail nav  ol li a{
     text-decoration: none;
+    text-transform: capitalize;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -37,8 +38,13 @@ body:not(footer){
     color: #949495;
 }
 
-.product-detail nav ol li a:hover{
+nav ol li a:hover{
     color: #2F2F30;
+}
+
+.breadcrumb-item.active a{
+    font-weight: 600;
+    color: #000000;
 }
 
 
@@ -63,7 +69,7 @@ body:not(footer){
 }
 
 .product-detail ul li:not(.product-info-bottom ul li){
-    margin: 10px;
+    margin: 10px 10px 10px 0px;
 }
 
 .product-detail .product-info-right{
@@ -118,49 +124,56 @@ body:not(footer){
     color: #043768;
 }
 
-.product-rating{ 
-    border: none;
-    float: left;
-}
-  
-  .product-rating > input { 
-      display: none; 
-} 
-
-.product-rating > label:before { 
-    margin: 5px;
-    font-size: 1.25em;
-    font-family: FontAwesome;
+.rate {
     display: inline-block;
-    content: "\f005";
- }
-  
-  .product-rating > .half:before { 
-    content: "\f089";
+    border: 0;
+    color: #fff;
+}
+/* Hide radio */
+.rate > input {
+    display: none;
+}
+/* Order correctly by floating highest to the right */
+.rate > label {
+    float: right;
+}
+/* The star of the show */
+.rate > label:before {
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: .3rem .3rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f005 "; /* full star */
+}
+/* Zero stars rating */
+.rate > label:last-child:before {
+    content: "\f006 "; /* empty star outline */
+}
+/* Half star trick */
+.rate .half:before {
+    content: "\f089 "; /* half star no outline */
     position: absolute;
-  }
-  
-  .product-rating > label { 
-    color: #ddd; 
-   float: right; 
-  }
-  
-  /***** CSS Magic to Highlight Stars on Hover *****/
-  
-  .product-rating > input:checked ~ label, /* show gold star when clicked */
-  .rating:not(:checked) > label:hover, /* hover current star */
-  .rating:not(:checked) > label:hover ~ label { 
-      color: #FEBF34;  
-    } /* hover previous stars in list */
-  
-  .product-rating > input:checked + label:hover, /* hover current star when changing product-rating */
-  .product-rating > input:checked ~ label:hover,
-  .product-rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-  .product-rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+    padding-right: 0;
+}
+/* Click + hover color */
+input:checked ~ label, /* color current and previous stars on checked */
+label:hover, label:hover ~ label:not(.agreement label):not(.price-list label):not(.total-form label):not(){ 
+    color:#FEBF34; 
+} /* color previous stars on hover */
+
+/* Hover highlights */
+input:checked + label:hover, input:checked ~ label:hover, /* highlight current and previous stars */
+input:checked ~ label:hover ~ label, /* highlight previous selected stars for new rating */
+label:hover ~ input:checked ~ label /* highlight previous selected stars */ { 
+    color: #FFED85;  
+}
 
 
-  .product-price{
-      font-size: 24px;
+
+.product-price{
+    font-size: 24px;
     font-style: normal;
     font-weight: 800;
     line-height: 29px;
@@ -169,7 +182,7 @@ body:not(footer){
     margin-top: -20px;
 }
 
-hr{
+.price-bottom{
     margin-top: -60px;
     border: 0.5px solid #8E9091;
 }
@@ -429,7 +442,7 @@ hr{
 }
 
 .rating-numb{
-    margin-left: 20px;
+    margin-left: 10px;
     color: #FEBF34;
     text-decoration: none;
     font-size: 18px;
@@ -525,6 +538,7 @@ hr{
 }
 
 .translate{
+    text-decoration: none;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -533,6 +547,9 @@ hr{
     color: #043768;
 }
 
+.translate:hover{
+    text-decoration: none;
+}
 .types{
     list-style: none;
     display: flex;
@@ -653,7 +670,7 @@ hr{
 }
 
 .pagination .page-item:first-child .page-link,
-.pagination .page-item:last-child .right{
+.pagination .page-item:last-child .right:not(.categ-pagination .page-item:first-child):not(.categ-pagination .page-item:last-child){
     background-color: #F6F6F7;
     border: #F6F6F7;
 }
@@ -764,7 +781,7 @@ textarea.form-control{
     border: 1px solid #2F2F30;
 }
 
-footer{
+footer:not(.category-page-footer){
     margin-top: 10%;
 }
 

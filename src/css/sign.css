@@ -118,9 +118,9 @@
     box-sizing: border-box;
 }
 
-input:focus {
+/* input:focus {
     border: 2px solid #2F2F30;
-}
+} */
 
 
 .login{
@@ -327,14 +327,18 @@ input:focus {
 }
 
 .agreement label{
-    margin-top: 30px;
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 17px;
     letter-spacing: 0em;
     color: #949495;
+}
+
+.agreement label span{
+    display: inline-block;
 }
 
 .agreement label a{
@@ -346,7 +350,9 @@ input:focus {
     letter-spacing: 0em;
     color: #13589c;;
 }
-
+/* .agreement input[type="checkbox"]{
+    margin-bottom: 10px;
+} */
 
 .success-message,
 .forgotten-message{
@@ -406,9 +412,21 @@ input:focus {
     width: 100%;
 } */
 
+.order-id{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: 0em;
+}
 
-
-
+.order-id .order-numb{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+}
 
 
 .forgotten-message-title{
