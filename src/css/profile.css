@@ -103,6 +103,7 @@ input[type="number"] {
   font-style: normal;
   font-size: 16px;
   padding-bottom: 21px;
+  padding-left: 0;
 }
 
 .profile--section .profile--tabs .nav-link.active,
@@ -180,7 +181,7 @@ input[type="number"] {
   line-height: 17.07px;
   letter-spacing: 0em;
   padding: 8px 16px;
-  width: 180px;
+  width: auto;
   height: 36px;
   color: #f6f6f7;
 }
