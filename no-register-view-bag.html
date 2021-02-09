@@ -805,22 +805,43 @@
         <div class="row mt-5">
             <div class="col-lg-6">
                 <div class="container">
-                    <h4 class="coupon-title">Coupon / promo code</h4>
+                    <h4 class="coupon-title mb-4">Coupon / promo code</h4>
                     <hr class="coupon-bottom mb-5">
                     <a href="" class="coupon-code">I have a coupon code</a>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="container">
-                    <h4 class="totals-title">Totals</h4>
+                <div class="container pr-0">
+                    <h4 class="totals-title mb-4">Totals</h4>
                     <hr class="total-bottom">
                     <form action="" class="total-form">
-                        <label class="mt-3">cart</label>
-                        <input type="text" class="form-input-1 cart-input" placeholder="Cart total">
-                        <label class="mt-3">shipping</label>
-                        <input type="text" class="form-input-1 shipping-input mb-3" placeholder="No shipping method">
-                        <input type="text" class="form-input-1 my-5" placeholder="Order total">
-                        <button name="Submit" type="submit" id="submit-btn" class="btn checkout mt-4" data-toggle="modal" data-target=".bs-modal-new">checkout</button>
+                        <div class="row">
+                            <div class="col-lg-12 py-0 pl-3 pr-0 d-flex flex-column">
+                                <p class="totals-subtitle">Cart</p>
+                                <div class="d-flex flex-row justify-content-between cart-total">
+                                    <span>Cart total</span>
+                                    <span>AZN 120.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 py-0 pl-3 pr-0 d-flex flex-column mt-3">
+                                <p class="totals-subtitle">Shipping</p>
+                                <div class="d   -flex flex-row justify-content-between cart-total">
+                                    <span>No shipping method</span>
+                                    <span>AZN 0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 py-0 pl-3 pr-0  d-flex flex-column order">
+                                <div class="d-flex flex-row justify-content-between cart-total">
+                                    <span>Order total</span>
+                                    <span class="order-total">AZN 120.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="no-register-final-pay-after.html" class="btn checkout mt-5" data-toggle="modal">checkout</a>
                     </form>
                 </div>
             </div>
@@ -828,7 +849,7 @@
     </div>
 </section>
 
-<section class="added prod-det-added-sec">
+<section class="added prod-det-added-sec mt-5">
     <div class="container-fluid">
         <div class="row px-4">
             <div class="col-md-12">

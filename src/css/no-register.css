@@ -207,7 +207,8 @@
   border-bottom: 0.6px solid #043768;
 }
 
-.coupon-code-section .coupon-title .coupon-code-section .totals-title {
+.coupon-code-section .coupon-title,
+.coupon-code-section .totals-title {
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -260,7 +261,7 @@
 
 .total-form .checkout {
   position: relative;
-  margin-left: 53%;
+  margin-left: 51%;
   width: 306px;
   height: 62px;
   color: #fff;
@@ -272,6 +273,7 @@
   letter-spacing: 0em;
   box-sizing: border-box;
   border: 1px solid #2f2f30;
+  padding-top: 20px;
 }
 
 .total-form .checkout:after {
@@ -404,6 +406,10 @@
   color: #ff0a0a;
 }
 
+.info-cont:hover{
+  color: #fff;
+}
+
 /********************************* New Register Page End **********************************/
 
 /********************************* New Register final pay Page Start **********************************/
@@ -480,33 +486,33 @@
   font-weight: 700;
 }
 
-.totals--section .totals-subtitle {
+.totals-subtitle {
   font-weight: 600;
   font-size: 22px;
 }
 
-.totals--section .cart-total {
+.cart-total {
   background: #fff;
   height: 50px;
   padding: 14px;
   border: 1px solid #c4c4c4;
 }
 
-.totals--section .order {
+.order {
   margin-top: 53px;
 }
 
-.totals--section .cart-total .order-total {
+.cart-total .order-total {
   color: #ff0a0a;
 }
 
-.totals--section .cart-total span:nth-child(1) {
+.cart-total span:nth-child(1) {
   font-size: 18px;
   font-weight: 500;
   line-height: 21.94px;
 }
 
-.totals--section .cart-total span:nth-child(2) {
+.cart-total span:nth-child(2) {
   height: 22px;
   font-weight: 600;
   font-size: 18px;
