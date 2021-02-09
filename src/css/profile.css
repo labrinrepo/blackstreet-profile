@@ -77,14 +77,6 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.new-address .list-group .list-group-item {
-  background: none;
-  border: 0;
-  font-size: small;
-  color: #949495;
-  list-style: circle !important;
-}
-
 .profile--section {
   padding: 136px 83px;
 }
@@ -111,20 +103,6 @@ input[type="number"] {
   background: none;
   color: #323334;
 }
-
-/* *********************************************** Hide profile-info,edit,delete Sections  ************************************** */
-
-/* .profile-info.hide,
-.change-pass.hide,
-.delete-profile.hide,
-.address.hide,
-.order-history.hide,
-.new-address.hide,
-.add-new-address.hide,
-.my-addresses.hide,
-.delete-address.hide {
-  display: none;
-} */
 
 /* *********************************************** Profile Info  ************************************** */
 
@@ -158,10 +136,10 @@ input[type="number"] {
   color: #000000;
 }
 
-.profile-info .info--table .col-sm-4.table-cell p {
+.profile-info .info--table .col-lg-4.table-cell p {
   font-weight: 600;
 }
-.profile-info .info--table .col-sm-8.table-cell p {
+.profile-info .info--table .col-lg-8.table-cell p {
   font-weight: 400;
 }
 
@@ -217,6 +195,18 @@ input[type="number"] {
 .form-group {
   margin: 10px 0 20px 0;
 }
+
+.new-address form fieldset .list-item {
+  background: none;
+  border: 0;
+  font-size: small;
+  color: #949495;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
 .change-pass form fieldset,
 .edit-profile form fieldset,
 .delete-profile form fieldset,
@@ -450,6 +440,10 @@ input[type="number"] {
   padding: 22px;
 }
 
+.add-new-address .address-table .row:first-child .address-table-cell span {
+  font-weight: 600;
+}
+
 .add-new-address .address-table .list-group {
   padding: 36px 0 88px 22px;
 }
@@ -461,7 +455,6 @@ input[type="number"] {
   color: #000;
   font-weight: 500;
   line-height: 19.5px;
-  list-style: circle !important;
 }
 
 .add-new-address .address-table .row:last-child .address-table-cell:last-child {
@@ -636,14 +629,14 @@ input[type="number"] {
 
 /* *********************************************** Added address  ************************************** */
 
-.delete-address .row:nth-child(3).col-12 p {
+.delete-address .row:nth-child(3).col-lg-12 p {
   color: #2f2f30;
   font-size: 14px;
   font-weight: 500;
   line-height: 17.07px;
 }
 
-.delete-address .row:nth-child(4) .col-12 p {
+.delete-address .row:nth-child(4) .col-lg-12 p {
   font-size: 22px;
   font-weight: 700;
   line-height: 26.82px;
@@ -794,7 +787,7 @@ input[type="number"] {
 
 /* *********************************************** Wishlist  ************************************** */
 
-.new-wishlist .row:nth-child(3) .col-12 p {
+.new-wishlist .row:nth-child(3) .col-lg-12 p {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -803,17 +796,17 @@ input[type="number"] {
   margin-bottom: 20px;
 }
 
-.new-wishlist form .row .col-12 .form-group label {
+.new-wishlist form .row .col-lg-12 .form-group label {
   font-weight: 600;
   font-size: 14px;
   line-height: 17.07px;
 }
 
-.new-wishlist form .row .col-12 .form-group label span {
+.new-wishlist form .row .col-lg-12 .form-group label span {
   color: red;
 }
 
-.new-wishlist form .row .col-12 .form-group input[type="text"].form-control {
+.new-wishlist form .row .col-lg-12 .form-group input[type="text"].form-control {
   width: 100%;
 }
 
@@ -868,13 +861,13 @@ input[type="number"] {
   .row:nth-child(2)
   .wishlist-info-table-cell
   .row
-  .col-7,
+  .col-lg-7,
 .wishlist-info
   .wishlist-info-table
   .row:nth-child(2)
   .wishlist-info-table-cell
   .row
-  .col-5 {
+  .col-lg-5 {
   height: 231px;
   padding: 22px;
 }
@@ -884,7 +877,7 @@ input[type="number"] {
   .row:nth-child(2)
   .wishlist-info-table-cell
   .row
-  .col-7 {
+  .col-lg-7 {
   border-right: 1px solid #c4c4c4;
 }
 
@@ -931,6 +924,7 @@ input[type="number"] {
   background-position: 92% 50%;
   cursor: pointer;
   font-weight: 500;
+  border-radius: 0;
 }
 
 /* *********************************************** Wishlist Info  ************************************** */
@@ -1233,7 +1227,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  width: 111px;
+  width: auto;
   line-height: 17.07px;
   letter-spacing: 0em;
   padding: 8px 16px;
