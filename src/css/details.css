@@ -127,7 +127,7 @@ nav ol li a:hover{
 .rate {
     display: inline-block;
     border: 0;
-    color: #fff;
+    color:#FEBF34;
 }
 /* Hide radio */
 .rate > input {
@@ -157,18 +157,7 @@ nav ol li a:hover{
     position: absolute;
     padding-right: 0;
 }
-/* Click + hover color */
-input:checked ~ label, /* color current and previous stars on checked */
-label:hover, label:hover ~ label:not(.agreement label):not(.price-list label):not(.total-form label):not(){ 
-    color:#FEBF34; 
-} /* color previous stars on hover */
 
-/* Hover highlights */
-input:checked + label:hover, input:checked ~ label:hover, /* highlight current and previous stars */
-input:checked ~ label:hover ~ label, /* highlight previous selected stars for new rating */
-label:hover ~ input:checked ~ label /* highlight previous selected stars */ { 
-    color: #FFED85;  
-}
 
 
 
@@ -290,33 +279,14 @@ label:hover ~ input:checked ~ label /* highlight previous selected stars */ {
     width: 490px;
     height: 62px;
     padding: 20px;
+    transition: all .3s linear;
 }
 
-.product-size .bag-like-buttons .add-bag:after { 
-    content: "";
-    height: 100%; 
-    left: 0; 
-    top: 0; 
-    width: 0px;  
-    position: absolute; 
-    transition: all 0.3s ease 0s; 
-    -webkit-transition: all 0.5s ease 0s; 
-    z-index: -1;
-}
- 
-.product-size .bag-like-buttons .add-bag:hover{
-    outline: none;
-    /* border-color: #fff; */
+.product-size .bag-like-buttons .add-bag:hover {
+    background: #fff !important;
     color: #2F2F30;
+    border: 1px solid;
 }
-
-.product-size .bag-like-buttons .add-bag:hover:after{
-    background-color: #fff;
-    width: 100%;
-    border: 1px solid #2F2F30;
-}
-
-
 
 
 .product-size .bag-like-buttons a i{
@@ -613,38 +583,22 @@ label:hover ~ input:checked ~ label /* highlight previous selected stars */ {
     box-sizing: border-box;  
     -moz-box-sizing: border-box;  
     -webkit-box-sizing: border-box; 
+    transition: all .2s linear;
 }
 
 .write-review,
-.write-review:focus,
-.write-review:after,
-.write-review:hover:after,
-.write-review:hover{
+.write-review:focus{
     outline: #fff;
 }
 
-.write-review:after { 
-    content: "";
-    height: 100%; 
-    left: 0; 
-    top: 0; 
-    width: 0px;  
-    position: absolute; 
-    transition: all 0.3s ease 0s; 
-    -webkit-transition: all 0.5s ease 0s; 
-    z-index: -1;
-}
  
 .write-review:hover{
     outline: none;
     color: #2F2F30;
+    background: #fff;
 
 }
 
-.write-review:hover:after{
-    background-color: #fff;
-    width: 100%;
-}
 
 
 .pagination-part{
@@ -757,29 +711,11 @@ textarea.form-control{
     margin-top: 30px;
 }
 
-.btn-send:after { 
-    content: "";
-    height: 100%; 
-    left: 0; 
-    top: 0; 
-    width: 0px;  
-    position: absolute; 
-    transition: all 0.3s ease 0s; 
-    -webkit-transition: all 0.5s ease 0s; 
-    z-index: -1;
-}
- 
+
 .btn-send:hover{
-    outline: none;
-    /* border-color: #fff; */
-    color: #2F2F30;
+    color: #fff;
 }
 
-.btn-send:hover:after{
-    background-color: #fff;
-    width: 100%;
-    border: 1px solid #2F2F30;
-}
 
 footer:not(.category-page-footer){
     margin-top: 10%;

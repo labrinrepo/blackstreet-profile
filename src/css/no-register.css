@@ -274,31 +274,12 @@
   box-sizing: border-box;
   border: 1px solid #2f2f30;
   padding-top: 20px;
-}
-
-.total-form .checkout:after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0px;
-  position: absolute;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  z-index: -1;
-  border: 1px solid #2f2f30;
+  transition: all .2s linear;
 }
 
 .total-form .checkout:hover {
-  outline: none;
+  background: #fff !important; 
   color: #2f2f30;
-  border: 1px solid #2f2f30;
-}
-
-.total-form .checkout:hover:after {
-  background-color: #fff;
-  width: 100%;
 }
 
 .form-input-1 {
@@ -326,6 +307,30 @@
   line-height: 29px;
   letter-spacing: 0em;
   color: #2f2f30;
+}
+
+.no-register-address-section .continue-btn {
+  color: #fff;
+  width: 110px;
+  border: 1px solid #2f2f30;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+
+.no-register-address-section .continue-btn:hover {
+  background: #fff !important;
+  color: #2f2f30;
+}
+
+.no-register-address-section .return-btn {
+  background: #fff !important;
+  border: 1px solid;
+}
+
+.no-register-address-section .return-btn:hover {
+  background: #2f2f30 !important;
+  color: #fff;
+  border: 1px solid #2f2f30;
 }
 
 .personal-info-table {
@@ -370,12 +375,13 @@
   color: #fff;
   width: 190px;
   height: 33px;
-  padding: 10px;
+  padding: 8px;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 17px;
   letter-spacing: 0em;
+  transition: all 0.2s linear;
 }
 
 .personal-info-table input[type="checkbox"]::before {
@@ -406,8 +412,9 @@
   color: #ff0a0a;
 }
 
-.info-cont:hover{
-  color: #fff;
+.info-cont:hover {
+  background: #fff !important;
+  border: 1px solid;
 }
 
 /********************************* New Register Page End **********************************/
@@ -519,7 +526,6 @@
   line-height: 22px;
 }
 
-
 .totals--section .checkout-pay {
   position: relative;
   color: #fff;
@@ -533,31 +539,12 @@
   border: 1px solid #2f2f30;
   padding: 20px;
   margin-top: 64px;
-}
-
-.totals--section .checkout-pay:after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0px;
-  position: absolute;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  z-index: -1;
-  border: 1px solid #2f2f30;
+  transition: all .2s linear;
 }
 
 .totals--section .checkout-pay:hover {
-  outline: none;
+  background: #fff !important;
   color: #2f2f30;
-  border: 1px solid #2f2f30;
-}
-
-.totals--section .checkout-pay:hover:after {
-  background-color: #fff;
-  width: 100%;
 }
 
 /********************************* New Register final pay Page End **********************************/

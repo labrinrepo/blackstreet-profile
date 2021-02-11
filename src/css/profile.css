@@ -15,6 +15,7 @@
 
 nav .breadcrumb {
   background-color: #f6f6f7;
+  margin-left: 10px;
 }
 
 nav ol li a {
@@ -53,10 +54,13 @@ nav ol li a:hover {
 
 textarea {
   resize: none;
+  border-radius: 0 !important;
+  background: #fff !important;
 }
 
 textarea:focus {
   box-shadow: none !important;
+  border: 1px solid #c4c4c4 !important;
 }
 
 input {
@@ -148,46 +152,68 @@ input[type="number"] {
   height: 33px;
 }
 
-.btn-profile,
-.btn-quantity {
+.btn-add-address,
+.btn-edit,
+.btn-pass,
+.btn-quantity,
+.delete-btn {
   position: relative;
   background: #2f2f30;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 17.07px;
   letter-spacing: 0em;
   padding: 8px 16px;
-  width: auto;
+  width: 218px !important;
   height: 36px;
   color: #f6f6f7;
+  transition: all 0.2s linear;
 }
 
-.btn-profile::after,
-.btn-quantity::after {
-  content: "";
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0px;
-  position: absolute;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  z-index: -1;
+.btn-quantity {
+  width: auto !important;
 }
 
-.btn-profile:hover,
-.btn-quantity:hover {
-  outline: none;
+.delete-btn {
+  width: 92px !important;
+  height: 33px;
+}
+
+.btn-delete {
+  position: relative;
+  background: #f6f6f7 !important;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17.07px;
+  letter-spacing: 0em;
+  padding: 8px 16px;
+  width: 218px !important;
+  height: 36px;
   color: #2f2f30;
+  border: 1px solid;
+  transition: all 0.2s linear;
 }
 
-.btn-profile:hover::after,
-.btn-quantity:hover::after {
-  background-color: #fff;
-  width: 100%;
+.btn-add-address:hover,
+.btn-edit:hover,
+.btn-pass:hover,
+.save-btn:hover,
+.delete-btn:hover,
+.btn-quantity:hover {
+  background: white !important;
+  border: 1px solid;
+  color: #2f2f30 !important;
+}
+
+.btn-delete:hover,
+.cancel-btn:hover {
+  background: #2f2f30 !important;
   border: 1px solid #2f2f30;
+  color: #fff !important;
 }
 
 /* *********************************************** Change Password  ************************************** */
@@ -257,9 +283,11 @@ input[type="number"] {
   margin-bottom: 6px;
 }
 
+.new-address .btn.save-btn {
+  margin-left: 8px;
+}
+
 .save-btn {
-  width: 92px;
-  height: 33px;
   position: relative;
   background: #2f2f30;
   text-transform: uppercase;
@@ -269,36 +297,14 @@ input[type="number"] {
   line-height: 17.07px;
   letter-spacing: 0em;
   padding: 8px 16px;
+  width: 92px !important;
+  text-align: center;
+  height: 33px;
   color: #f6f6f7;
-  margin-left: 8px;
-}
-
-.save-btn::after {
-  content: "";
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0px;
-  position: absolute;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  z-index: -1;
-}
-
-.save-btn:hover {
-  outline: none;
-  color: #2f2f30;
-}
-
-.save-btn:hover::after {
-  background-color: #fff;
-  width: 100%;
-  border: 1px solid #2f2f30;
+  transition: all 0.2s linear;
 }
 
 .cancel-btn {
-  width: 92px;
-  height: 33px;
   position: relative;
   background: #f6f6f7 !important;
   text-transform: uppercase;
@@ -308,31 +314,11 @@ input[type="number"] {
   line-height: 17.07px;
   letter-spacing: 0em;
   padding: 8px 16px;
-  color: #2f2f30 !important;
-  border: 1px solid !important;
-}
-
-.cancel-btn::after {
-  content: "";
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0px;
-  position: absolute;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  z-index: -1;
-}
-
-.cancel-btn:hover {
-  outline: none;
-  color: #f6f6f7 !important;
-  border: 1px solid #000 !important;
-}
-
-.cancel-btn:hover::after {
-  background-color: #2f2f30 !important;
-  width: 100%;
+  width: 92px !important;
+  height: 33px;
+  color: #2f2f30;
+  border: 1px solid;
+  transition: all 0.2s linear;
 }
 
 /* *********************************************** Edit Profile  ************************************** */
@@ -389,28 +375,6 @@ input[type="number"] {
 .add-new-address .btn.btn-add-address {
   color: #fff;
   border: 1px solid #000 !important;
-}
-
-.add-new-address .btn.btn-add-address::after {
-  content: "";
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0px;
-  position: absolute;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  z-index: -1;
-}
-
-.add-new-address .btn.btn-add-address:hover {
-  color: #2f2f30;
-  border: 1px solid !important;
-}
-
-.add-new-address .btn.btn-add-address:hover::after {
-  background: #f6f6f7;
-  width: 100%;
 }
 
 .add-new-address .alert {
@@ -529,7 +493,7 @@ input[type="number"] {
 
 .my-addresses .my-addresses-table .my-addresses-cell .btn-address {
   position: relative;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -537,6 +501,7 @@ input[type="number"] {
   letter-spacing: 0em;
   padding: 8px 16px;
   width: auto;
+  transition: all 0.2s linear;
 }
 
 .my-addresses
@@ -547,18 +512,6 @@ input[type="number"] {
   color: #f6f6f7;
 }
 
-.my-addresses .my-addresses-table .my-addresses-cell .btn-address::after {
-  content: "";
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0px;
-  position: absolute;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  z-index: -1;
-}
-
 .my-addresses
   .my-addresses-table
   .my-addresses-cell
@@ -567,13 +520,13 @@ input[type="number"] {
   color: #2f2f30;
 }
 
-.my-addresses
+/* .my-addresses
   .my-addresses-table
   .my-addresses-cell
   .btn-address:not(.default-bill):hover::after {
   background-color: #fff;
   width: 100%;
-}
+} */
 
 .my-addresses .my-addresses-table .my-addresses-cell .btn-address.default-bill {
   background: transparent !important;
@@ -584,17 +537,26 @@ input[type="number"] {
   .my-addresses-table
   .my-addresses-cell
   .btn-address.default-bill:hover {
+  background: #2f2f30 !important;
   color: white;
-  outline: none;
+  border: 1px solid;
 }
 
 .my-addresses
   .my-addresses-table
   .my-addresses-cell
+  .btn-address.default-ship:hover {
+  background: #f6f6f7 !important;
+  border: 1px solid;
+}
+
+/* .my-addresses
+  .my-addresses-table
+  .my-addresses-cell
   .btn-address.default-bill:hover::after {
   background-color: #2f2f30;
   width: 100%;
-}
+} */
 
 .my-addresses .my-addresses-table .list-group .list-group-item {
   background: none;
@@ -642,42 +604,6 @@ input[type="number"] {
   font-weight: 700;
   line-height: 26.82px;
   margin: 28px 0 36px 0;
-}
-
-.delete-address .row:last-child .delete-btn {
-  position: relative;
-  background: #2f2f30;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 17.07px;
-  letter-spacing: 0em;
-  padding: 8px 16px;
-  color: #f6f6f7;
-}
-
-.delete-address .row:last-child .delete-btn::after {
-  content: "";
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0px;
-  position: absolute;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  z-index: -1;
-}
-
-.delete-address .row:last-child .delete-btn:hover {
-  outline: none;
-  color: #2f2f30;
-}
-
-.delete-address .row:last-child .delete-btn:hover::after {
-  background-color: #fff;
-  width: 100%;
-  border: 1px solid #2f2f30;
 }
 
 /* *********************************************** Wishlist  ************************************** */
@@ -761,29 +687,14 @@ input[type="number"] {
   letter-spacing: 0em;
   padding: 8px 16px;
   color: #f6f6f7;
-}
-
-.wishlist .btn-wishlist::after {
-  content: "";
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0px;
-  position: absolute;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  z-index: -1;
+  transition: all 0.2s linear;
+  width: 233px;
 }
 
 .wishlist .btn-wishlist:hover {
-  outline: none;
+  background: #f6f6f7 !important;
   color: #2f2f30;
-}
-
-.wishlist .btn-wishlist:hover::after {
-  background-color: #fff;
-  width: 100%;
-  border: 1px solid #2f2f30;
+  border: 1px solid;
 }
 
 /* *********************************************** Wishlist  ************************************** */
@@ -1026,7 +937,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .btn-filter {
   position: relative;
   background: #2f2f30;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1039,33 +950,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-top: 28px;
 }
 
-.btn-filter::after {
-  content: "";
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0px;
-  position: absolute;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  z-index: -1;
-}
-
-.btn-filter:hover {
-  outline: none;
-  color: #2f2f30;
-}
-
-.btn-filter:hover::after {
-  background-color: #fff;
-  width: 100%;
-  border: 1px solid #2f2f30;
-}
-
 .btn-reset {
   position: relative;
   background: #fff !important;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1077,29 +965,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #2f2f30;
   border: 1px solid !important;
   margin-top: 28px;
-}
-
-.btn-reset::after {
-  content: "";
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0px;
-  position: absolute;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  z-index: -1;
-}
-
-.btn-reset:hover {
-  outline: none;
-  color: #fff;
-}
-
-.btn-reset:hover::after {
-  background-color: #2f2f30;
-  width: 100%;
-  border: 1px solid #2f2f30 !important;
 }
 
 .order-history .orders-subtitle {
@@ -1137,7 +1002,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   font-weight: 600;
   padding: 28px 0 0 0;
-  margin-left: -18px;
+  margin-left: -15px;
 }
 
 /* *********************************************** Email History  ************************************** */
@@ -1224,7 +1089,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .btn-reorder-all {
   position: relative;
   background: #2f2f30;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1241,32 +1106,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 190px;
   margin-top: 44px;
   margin-left: 0;
-}
-
-.btn-reorder::after,
-.btn-reorder-all::after {
-  content: "";
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0px;
-  position: absolute;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  z-index: -1;
-}
-
-.btn-reorder:hover,
-.btn-reorder-all:hover {
-  outline: none;
-  color: #2f2f30;
-}
-
-.btn-reorder:hover::after,
-.btn-reorder-all:hover::after {
-  background-color: #fff;
-  width: 100%;
-  border: 1px solid #2f2f30;
 }
 
 .shipping-table .table-cell {
