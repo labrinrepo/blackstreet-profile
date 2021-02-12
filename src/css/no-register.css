@@ -54,7 +54,7 @@
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0em;
-  color: #000000;
+  color: #2f2f30;
 }
 
 .table-img img {
@@ -83,7 +83,7 @@
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
-  color: #000000;
+  color: #2f2f30;
 }
 
 .select {
@@ -114,7 +114,7 @@
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0em;
-  color: #000000;
+  color: #2f2f30;
 }
 
 .size-select select.input-lg {
@@ -169,7 +169,7 @@
   font-weight: 500;
   line-height: 29px;
   letter-spacing: 0em;
-  color: #000000;
+  color: #2f2f30;
 }
 
 .shopping-table .tbody .td-quantity .td-quantity-numb .decrease-numb,
@@ -180,7 +180,7 @@
   font-weight: 500;
   line-height: 29px;
   letter-spacing: 0em;
-  color: #000000;
+  color: #2f2f30;
 }
 
 .shopping-table .tbody .td-quantity .td-quantity-operations {
@@ -235,7 +235,7 @@
   font-weight: 500;
   line-height: 22px;
   letter-spacing: 0em;
-  color: #000000;
+  color: #2f2f30;
 }
 
 .total-form {
@@ -245,7 +245,7 @@
 }
 
 .total-form label {
-  color: #000000;
+  color: #2f2f30;
   text-transform: capitalize;
   font-size: 22px;
   font-style: normal;
@@ -444,7 +444,7 @@
 
 .finalpay-table .finalpay-table-cell .list-group .list-group-item {
   background: none;
-  color: #000000;
+  color: #2f2f30;
   padding: 0 0 6px 0;
   font-weight: 500;
   font-style: 16px;

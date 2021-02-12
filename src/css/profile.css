@@ -52,7 +52,7 @@ nav ol li a:hover {
   text-transform: uppercase;
 }
 
-textarea {
+textarea:not(textarea.form-control) {
   resize: none;
   border-radius: 0 !important;
   background: #fff !important;
@@ -117,7 +117,7 @@ input[type="number"] {
 }
 
 .profile-info .info--table {
-  color: #000;
+  color: #2f2f30;
   border: 0;
   font-weight: 500;
   font-style: normal;
@@ -137,7 +137,7 @@ input[type="number"] {
   font-style: normal;
   line-height: 20px;
   letter-spacing: 0em;
-  color: #000000;
+  color: #2f2f30;
 }
 
 .profile-info .info--table .col-lg-4.table-cell p {
@@ -374,7 +374,7 @@ input[type="number"] {
 
 .add-new-address .btn.btn-add-address {
   color: #fff;
-  border: 1px solid #000 !important;
+  border: 1px solid #2f2f30 !important;
 }
 
 .add-new-address .alert {
@@ -417,7 +417,7 @@ input[type="number"] {
   background: none;
   border: 0;
   font-size: 16px;
-  color: #000;
+  color: #2f2f30;
   font-weight: 500;
   line-height: 19.5px;
 }
@@ -436,7 +436,7 @@ input[type="number"] {
   height: 50px;
   border: 1px solid #c4c4c4;
   border-radius: 0;
-  color: #000;
+  color: #2f2f30;
   background: url("../../assets/icon/down-arrow.svg"), transparent;
   background-repeat: no-repeat;
   background-position: 90% 50%;
@@ -562,7 +562,7 @@ input[type="number"] {
   background: none;
   border: 0;
   font-size: 16px;
-  color: #000;
+  color: #2f2f30;
   font-weight: 500;
   line-height: 19.5px;
   list-style: circle !important;
@@ -576,7 +576,7 @@ input[type="number"] {
   border: 1px solid #c4c4c4;
   border-radius: 0;
   box-sizing: border-box;
-  color: #000;
+  color: #2f2f30;
   background: url("../../assets/icon/down-arrow.svg"), transparent;
   background-repeat: no-repeat;
   background-position: 94% 50%;
@@ -638,7 +638,7 @@ input[type="number"] {
   line-height: 20px;
   display: flex;
   align-items: flex-start;
-  color: #000;
+  color: #2f2f30;
 }
 
 .wishlist
@@ -948,6 +948,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 36px;
   color: #f6f6f7;
   margin-top: 28px;
+  transition: all 0.2s linear;
+}
+
+.btn-filter:hover {
+  background: #fff !important;
+  border: 1px solid;
 }
 
 .btn-reset {
@@ -965,6 +971,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #2f2f30;
   border: 1px solid !important;
   margin-top: 28px;
+  transition: all 0.2s linear;
+}
+
+.btn-reset:hover {
+  background: #2f2f30 !important;
+  color: #fff;
+  border: 1px solid #2f2f30;
 }
 
 .order-history .orders-subtitle {
@@ -1014,7 +1027,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .email-history-table .email-history-table-cell {
   padding: 22px;
   border: 1px solid #c4c4c4;
-  color: #000;
+  color: #2f2f30;
 }
 
 .email-history-table .row:nth-child(1) .email-history-table-cell span {
