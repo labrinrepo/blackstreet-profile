@@ -76,6 +76,13 @@ nav ol li a:hover {
   padding: 0;
 }
 
+.product-detail .product-info-right .to-product-page {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 0 10px;
+}
+
 .product-detail .product-info-right h3 {
   font-size: 16px;
   font-style: normal;
@@ -168,7 +175,7 @@ nav ol li a:hover {
 
 .price-bottom {
   margin-top: -60px;
-  border: 0.5px solid #8e9091;
+  border: 1px solid rgba(142, 144, 145, 0.185);
 }
 
 .product-size {
@@ -728,6 +735,7 @@ footer:not(.category-page-footer) {
 }
 #full-stars-example-two .rating__icon--star {
   color: orange;
+  text-shadow: -1px 0 #2f2f30, 0 1px #2f2f30, 1px 0 #2f2f30, 0 -1px #2f2f30;
 }
 #full-stars-example-two
   .rating__input:checked

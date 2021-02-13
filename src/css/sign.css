@@ -142,8 +142,9 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  transition: all .2s linear;
 }
-
+/* 
 .login:after {
   content: "";
   display: inline-block;
@@ -155,18 +156,19 @@
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.5s ease 0s;
   z-index: -1;
-}
+} */
 
 .login:hover {
   outline: none;
   color: #2f2f30;
   border: 1px solid #2f2f30;
+  background: #fff !important;
 }
-
+/* 
 .login:hover:after {
   background-color: #fff;
   width: 100%;
-}
+} */
 
 .col-divider {
   position: relative;
